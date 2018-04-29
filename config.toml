@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://www.adamante.com.br/"
+baseurl = "https://gallant-babbage-78444d.netlify.com/"
 themesDir = "themes"
 defaultContentLanguage = "pt"
 title = "Gabriel Adamante"
