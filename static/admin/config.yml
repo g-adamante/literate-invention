@@ -2,7 +2,7 @@ backend:
   name: github
   repo: g-adamante/literate-invention
   branch: master # Branch to update (optional; defaults to master)
- name: github repo: owner-name/repo-name
+  
 publish_mode: editorial_workflow
 
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
