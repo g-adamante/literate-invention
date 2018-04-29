@@ -1,0 +1,125 @@
+# Site settings
+baseurl = "https://www.adamante.com.br/"
+themesDir = "themes"
+defaultContentLanguage = "pt"
+title = "Gabriel Adamante"
+theme = "hugo-cactus-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-92197570-1"
+# Disable comments by leaving disqusShortname empty
+disqusShortname = ""
+
+[params]
+	name = "Gabriel Adamante"
+	description = "Artigos, Contos e Anotações"
+	bio = "Tocantinense nascido em Curitiba e morando na Europa. Apaixonado por Literatura, Tecnologia e por caminhar"
+	frontpagebio = "Hello! Welcome to my website. Se você falar português, seja bem vindo! I'm Gabriel Adamante. I write about a lot of things, and also fiction (witch I really enjoy). I wrote a short stories book called Tales the World Ending. Right now, I'm living in Italy, and working on a translation of Marcus Aurelius Meditations to portuguese. You'll find here some book notes, what I'm doing right now,my Short Stories (in portuguese, I'm afraid :/ ), and some snippets of code I may have put to use."
+	# Enter optionally your twitter account
+	twitter = "Aadamante"
+	enableRSS = true
+
+	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
+	# linking local files with their path relative to the static folder, e.g. "css/styles.css"
+	customCSS = []
+	customJS  = []
+
+	# The variables below are optionally too and can be used to
+	# translate or customize each string of the theme.
+
+	# Navigation links
+	home = ""
+	subscribe = ""
+	# Pagination links
+	olderPosts = ""
+	newerPosts = ""
+	readMore = ""
+	copyright = ""
+	# Sharing options and author information in posts
+	aboutAuthor = "Tocantinense nascido em Curitiba e morando na Europa. Apaixonado por Literatura, Tecnologia e por caminhar."
+	tweet = ""
+	share = ""
+	# 404 page
+	title404 = ""
+	subtitle404 = ""
+
+	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+	iconFont = "font-awesome"
+    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+    socialIconStyle = "circle"
+
+# Add additional social link entries underneath
+[social]
+    twitter  = "https://www.twitter.com/Aadamante"
+    facebook = "https://www.facebook.com/gabriel.adamante"
+    github   = "https://www.github.com/g-adamante"
+	instagram = "https://www.instagram.com/adamante"
+
+[menu]
+	[[menu.main]]
+	identifier = "artigos"
+	name = "Artigos"
+	url = "/articles/"
+	weight = 1
+		
+	[[menu.main]]
+	identifier = "notas"
+	name = "Notas"
+	url = "/notes/"
+	weight = 2
+	
+	[[menu.main]]
+	identifier = "ficcao"
+	name = "Ficção"
+	url = "/fiction/"
+	weight = 3
+
+	[[menu.main]]
+	identifier = "agora"
+	name = "Agora"
+	url = "/now/"
+	weight = 4
+	
+	[[menu.main]]
+	identifier = "sobre"
+	name = "Sobre"
+	url = "/about/"
+	weight = 5
+
+
+[languages]
+  [languages.pt]
+    title = "Gabriel Adamante"
+    weight = 1
+  [languages.en]
+    title = "Gabriel Adamante"
+    weight = 2
+    [languages.en.params]
+    	[languages.en.menu]
+			[[languages.en.menu.main]]
+			identifier = "articles"
+			name = "Articles"
+			url = "/en/articles/"
+			weight = 1
+			[[languages.en.menu.main]]
+			identifier = "notes"
+			name = "Notes"
+			url = "/en/notes/"
+			weight = 2
+			
+			[[languages.en.menu.main]]
+			identifier = "fiction"
+			name = "Fiction"
+			url = "/en/fiction/"
+			weight = 3
+
+			[[languages.en.menu.main]]
+			identifier = "now"
+			name = "Now"
+			url = "/en/now/"
+			weight = 4
+			
+			[[languages.en.menu.main]]
+			identifier = "about"
+			name = "About"
+			url = "/en/about/"
+			weight = 5
