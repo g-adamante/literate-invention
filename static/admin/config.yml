@@ -11,10 +11,223 @@ public_folder: "/images/" # The src attribute for uploaded media will begin with
 collections:
 
   - name: "articles" # Used in routes, e.g., /admin/collections/blog
+    label: "Artigos" # Used in the UI
+    folder: "content/articles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}.pt" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Categories"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Keywords"
+        name: "keywords"
+        required: false
+        widget: "list"
+        
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  - name: "code" # Used in routes, e.g., /admin/collections/blog
+    label: "Código" # Used in the UI
+    folder: "content/code" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}.pt" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Categories"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Keywords"
+        name: "keywords"
+        required: false
+        widget: "list"
+        
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+
+  - name: "fiction" # Used in routes, e.g., /admin/collections/blog
+    label: "Ficção" # Used in the UI
+    folder: "content/ficton" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}.pt" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Categories"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Keywords"
+        name: "keywords"
+        required: false
+        widget: "list"
+        
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+
+  - name: "notes" # Used in routes, e.g., /admin/collections/blog
+    label: "Notas" # Used in the UI
+    folder: "content/notes" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}.pt" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Categories"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Keywords"
+        name: "keywords"
+        required: false
+        widget: "list"
+        
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+
+  - name: "now" # Used in routes, e.g., /admin/collections/blog
+    label: "Agora" # Used in the UI
+    folder: "content/now" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}.pt" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Categories"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Keywords"
+        name: "keywords"
+        required: false
+        widget: "list"
+        
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  - name: "about" # Used in routes, e.g., /admin/collections/blog
+    label: "Sobre" # Used in the UI
+    folder: "content/about" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}.pt" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Categories"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Keywords"
+        name: "keywords"
+        required: false
+        widget: "list"
+        
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  - name: "articles" # Used in routes, e.g., /admin/collections/blog
     label: "Articles" # Used in the UI
     folder: "content/articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}.en" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
 
       - label: "Title"
@@ -49,7 +262,7 @@ collections:
     label: "Code" # Used in the UI
     folder: "content/code" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}.en" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
 
       - label: "Title"
@@ -85,7 +298,7 @@ collections:
     label: "Fiction" # Used in the UI
     folder: "content/ficton" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}.en" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
 
       - label: "Title"
@@ -121,7 +334,7 @@ collections:
     label: "Notes" # Used in the UI
     folder: "content/notes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}.en" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
 
       - label: "Title"
@@ -157,7 +370,7 @@ collections:
     label: "Now" # Used in the UI
     folder: "content/now" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}.en" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
 
       - label: "Title"
@@ -187,3 +400,39 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+
+  - name: "about" # Used in routes, e.g., /admin/collections/blog
+    label: "About" # Used in the UI
+    folder: "content/about" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}.en" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        required: false
+        widget: "datetime"
+
+      - label: "Categories"
+        name: "categories"
+        required: false
+        widget: "list"
+
+      - label: "Tags"
+        name: "tags"
+        required: false
+        widget: "list"
+
+      - label: "Keywords"
+        name: "keywords"
+        required: false
+        widget: "list"
+        
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
