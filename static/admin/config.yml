@@ -1,6 +1,4 @@
-backend:
-  name: github repo: g-adamante/literate-invention
-  branch: master # Branch to update (optional; defaults to master)
+yaml backend: name: github repo: g-adamante/literate-invention
 
 publish_mode: editorial_workflow
 
