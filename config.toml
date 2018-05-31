@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://gallant-babbage-78444d.netlify.com/"
+baseurl = "https://www.adamante.com.br/"
 themesDir = "themes"
 defaultContentLanguage = "pt"
 title = "Gabriel Adamante"
@@ -12,7 +12,7 @@ disqusShortname = ""
 [params]
 	name = "Gabriel Adamante"
 	description = "Artigos, Contos e Anotações"
-	bio = "Tocantinense nascido em Curitiba e morando na Europa. Apaixonado por Literatura, Tecnologia e por caminhar"
+	bio = "Bla."
 	frontpagebio = "Hello! Welcome to my website. Se você falar português, seja bem vindo! I'm Gabriel Adamante. I write about a lot of things, and also fiction (witch I really enjoy). I wrote a short stories book called Tales the World Ending. Right now, I'm living in Italy, and working on a translation of Marcus Aurelius Meditations to portuguese. You'll find here some book notes, what I'm doing right now,my Short Stories (in portuguese, I'm afraid :/ ), and some snippets of code I may have put to use."
 	# Enter optionally your twitter account
 	twitter = "Aadamante"
@@ -35,7 +35,7 @@ disqusShortname = ""
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = "Tocantinense nascido em Curitiba e morando na Europa. Apaixonado por Literatura, Tecnologia e por caminhar."
+	aboutAuthor = ""
 	tweet = ""
 	share = ""
 	# 404 page
