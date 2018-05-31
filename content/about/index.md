@@ -6,7 +6,7 @@ draft: false
 
 ## Quem sou eu?
 
-Olá. Meu nome é Gabriel. Mão preciso te dizer que é muito desconfortável escrever uma seção "sobre o autor" de um site, já que todos se sentem estranhos ao fazer isso. E falar de si mesmo em terceira pessoa vem sempre associado a um sentimento de egomania arrogante (por isso estou escrevendo em primeira).
+Olá. Meu nome é Gabriel. Não preciso te dizer que é muito desconfortável escrever uma seção "sobre o autor" de um site, já que todos se sentem estranhos ao fazer isso. E falar de si mesmo em terceira pessoa vem sempre associado a um sentimento de egomania arrogante (por isso estou escrevendo em primeira).
 
 Enfim, já que estou aqui, vou me apresentar.
 
