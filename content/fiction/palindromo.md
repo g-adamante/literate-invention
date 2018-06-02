@@ -1,8 +1,7 @@
 ---
 title: "Contos Palíndromos"
 date: 2017-02-19
-description: "Contos que podem ser lidos em qualquer direção.
-  de o fazer."
+description: "Contos que podem ser lidos em qualquer direção."
 draft: false
 ---
 
