@@ -1,11 +1,11 @@
 ---
-title: "Os"
+title: "O Sistema Operacional"
 date: 2018-04-28T20:25:04+02:00
 draft: false
+description: "Sobre como pensamos e organizamos nossos pensamentos"
 ---
 
 # O Sistema Operacional
-
 
 Imagine que você acabou de comprar um celular novo.
 
@@ -13,28 +13,28 @@ Mas esse celular veio sem um sistema operacional instalado.
 
 O celular seria inútil se você não pudesse usar Android, iOS ou até o Windows Phone nele.
 
-É ele o que vai permitir que você:
+O sistema operacional será o que vai permitir que você:
 
 - Interaja com o hardware (câmera, touchscreen etc.) 
 - Baixe aplicativos para resolver problema específicos.
 
 **Agora considere que você também é composto de hardware e software.** 
 
-Seu hardware é seu corpo: seu cérebro, seu pulmão, suas mãos, etc.
+Seu [hardware](https://pt.wikipedia.org/wiki/Hardware) é seu corpo: seu cérebro, seu pulmão, suas mãos, etc.
 
 Seu sistema operacional? 
 
 É sua mente - consciente e subconsciente.
 
-Vamos supor que a maioria das pessoas vêm ao mundo e passam os primeiros anos da vida dela construindo um sistema operacional que permite com que elas interajam com o hardware  (seu corpo).
+Vamos supor que a maioria das pessoas vêm ao mundo e passam os primeiros anos da vida dela construindo um sistema operacional que permite com que elas interajam com o próprio corpo.
 
-Então na sua infância você vai aprender a engatinhar, então usar suas pernas, e logo estará usando todas as partes do seu corpo para correr por aí. 
+Então na sua infância você vai aprender a engatinhar, depois a usar suas pernas, e logo estará correndo por aí, fazendo uso de todo o corpo de maneira complexa. 
 
 Um dos primeiros conceitos abstratos que você aprendeu foi a linguagem.
 
 **A lingua é um dos primeiros "aplicativos" que você instalou no seu sistema operacional com fim de fazer com que você se comunique com outros seres humanos.** 
 
-E logo você foi pra escola, que é um "*app store*" da infância - onde você vai aprender a ler, operações matemáticas básicas, etc. etc, e muito provavelmente depois se encontrou na faculdade instalando "*apps*" muito mais complexos.
+E logo você foi pra escola, que é um "*app store*" da infância - onde você aprendeu a ler, operações matemáticas básicas, etc. etc, e muito provavelmente depois se encontrou na faculdade instalando "*apps*" muito mais complexos.
 
 Agora: 
 
@@ -86,6 +86,12 @@ Dessa maneira, você irá entender a forma como elas pensam (o sistema operacion
 
 Você também pode pegar uma escola de pensamento e assumir ela como um sistema operacional. (Só tome cuidado para *entender como pensar*, não apenas copiar um pensamento sem entender seus pressupostos)
 
+
+---------------------------
+
+## A partir deste ponto, o conteúdo é um rascunho. Está em construção. Não terminei a linha de raciocínio ainda. Leia por próprio risco.
+
+
 O melhor sistema operacional que eu encontrei para minha produtividade e bem estar é o **Estoicismo**.
 
   Eu estou trabalhando todos os dias para construir o meu sistema operacional da melhor maneira possível, mas ele ainda é bem falho.
@@ -98,9 +104,3 @@ Eu encontrei algumas coisas que funcionam razoavelmente bem para mim em alguns s
 External things 
 
 ![Stoic Flowchart](/../images/stoicism.jpg) 
-
-
-- Rand falando sobre filosofia
-- Estoicismo (sistema para interpretar eventos externos e reagir a eles)
-- Vieses e heurísticas (como o estoicismo para de ser um modelo 2 para virar modelo 1)
-
