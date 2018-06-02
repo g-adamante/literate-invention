@@ -85,6 +85,11 @@ disqusShortname = ""
 	url = "/about/"
 	weight = 5
 
+	[[menu.main]]
+	identifier = "code"
+	name = "Código"
+	url = "/code/"
+	weight = 6
 
 [languages]
   [languages.pt]
@@ -123,3 +128,9 @@ disqusShortname = ""
 			name = "About"
 			url = "/en/about/"
 			weight = 5
+
+			[[languages.en.menu.main]]
+			identifier = "code"
+			name = "Code"
+			url = "/en/code/"
+			weight = 6
