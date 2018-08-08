@@ -1,0 +1,425 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://deltacontainers.com.br/wp-content/themes/delta_containers/css/lp.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.0/css/bootstrap-slider.min.css">
+
+<div id="hero" class="jumbotron" style="background-image: linear-gradient(to bottom, rgba(255,0,0,0.5), rgba(100,0,255,0.5)), url('/camara-fria.jpg')">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+            <h1 class="display-3" style="color:white;">Qual é o gasto de energia de uma câmara fria? </h1>
+            <p class="lead" style="color:white;">
+                Calcule quanto gasta uma câmara fria. </p>
+            <hr class="my-4" style="color:white;">
+            <p class="lead">
+                <a class="typeform-share button btn btn-primary btn-lg btn-success" href="#">Calcular</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="content" class="col-md-12">
+
+    <div id="benefits" class="bottom-space">
+        <div class="row" style="background-color:darkred">
+            <div class="col-md-12 text-center" style="color:white;"><h2>Calculadora de Consumo de Energia:</h2></div>
+            <div class="col-md-3 col-md-offset-3 text-center panel panel-success" style="margin-top:5%;">
+               <h2>Você vai gastar:</h2>
+               <div><h1 id="gasto" style="color:darkgreen;">R$<span id="valor">100</span>/Mês</h1><h2>com refrigeração</h2></div> 
+            </div>
+            <div class="col-md-3 col-md-offset-1 text-center form-group panel panel-success" style="margin-bottom:40px">
+                <form style="padding-top:20px;">
+                    <label for="tamanho">Tamanho da câmara fria:</label>
+                    <div class="input-group col-xs-6 col-xs-offset-3">
+                    <input type="number" placeholder="Tamanho" class="form-control" id="tamanho" name="tamanho">
+                    <div class="input-group-addon">M³</div>
+                </div>
+                    <label style="padding-top:20px" for="potencia">Potência do Motor:</label>
+                    <div class="input-group col-xs-6 col-xs-offset-3">
+                    <select class="form-control" id="potencia" class="dropdown" >
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>    
+                    </select>
+                </div>
+                    <label style="padding-top:20px;" for="temperatura">Temperatura desejada:</label>
+                    
+                    <input id="temperatura" data-slider-id='ex1Slider' type="text" data-slider-min="-20" data-slider-max="10" data-slider-step="1" data-slider-value="0"/>
+
+                    
+                </form>
+                <p class="lead" style="font-size:100%;">
+                    Lembre que essa calculadora é uma estimativa e esse valor pode mudar por idade do equipamento e outros fatores.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="testimonials bottom-space">
+        <h3 class="text-center bottom-space scroller fadeinDown">Conheça nossos clientes:</h3>
+    </div>
+    <div class="container bottom-space text-center">
+
+        <div class="row col-md-2 col-md-offset-1">
+            <img class="img-responsive" src="https://deltacontainers.com.br/wp-content/uploads/2018/03/extra.png">
+        </div>
+        <div class="row col-md-2 col-md-offset-1">
+            <img class="img-responsive" src="https://deltacontainers.com.br/wp-content/uploads/2018/03/extra.png">
+        </div>
+
+        <div class="row col-md-2 col-md-offset-1">
+            <img class="img-responsive" src="https://deltacontainers.com.br/wp-content/uploads/2018/03/extra.png">
+        </div>
+        <div class="row col-md-2 col-md-offset-1">
+            <img class="img-responsive" src="https://deltacontainers.com.br/wp-content/uploads/2018/03/extra.png">
+        </div>
+    </div>
+    <hr>
+    <h2 class="text-center bottom-space" id="poucos-passos">Poucos passos para fazer sua construção em container</h2>
+    <div id="steps" class="container bottom-space">
+
+        <div class="row">
+            <div id="animate" class="col-md-3">
+                <div class="panel panel-default">
+
+                    <div class="panel-body text-center">
+                        <p class="h3">Nos apresente seu projeto estrutural<br><br>
+                            <i class="fa fa-file-text fa-3x big-num"></i></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="panel panel-default">
+
+                    <div class="panel-body text-center">
+                        <p class="h3">Analisamos a viabilidade<br><br>
+                            <i class="fa fa-spinner fa-3x big-num"></i></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="panel panel-default">
+
+                    <div class="panel-body text-center">
+                        <p class="h3">Preparamos um cronograma<br><br>
+                            <i class="fa fa-hourglass fa-3x big-num"></i></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="panel panel-default">
+
+                    <div class="panel-body text-center">
+                        <p class="h3" style="margin-bottom: 37px">Mão na massa! <br><br><br>
+                            <i class="fa fa-thumbs-up fa-3x big-num"></i></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+        <div id="info-estrutural" class="row text-center">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="">
+                        <div class="col-md-2">
+                            <p class="big-num">1</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="h2">Projeto Estrutural</p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                O primeiro passo para iniciar sua construção em container será a entrega do projeto arquitetônico que seu arquiteto ou engenheiro elaborou para a Delta analisar a viabilidade da obra. Para facilitar, você pode nos enviar o projeto aqui pelo site mesmo, assim, nossa equipe de analistas já poderá iniciar as análises necessárias.
+                            </p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <i class="fa fa-file-text fa-3x big-num"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="info-viabilidade" class="row text-center">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row vertical-align">
+
+
+                        <div class="col-md-2 hidden-md hidden-lg">
+                            <p class="big-num">2</p>
+                        </div>
+
+                        <div class="col-md-2 hidden-md hidden-lg">
+                            <p class="h2">Análise de Viabilidade</p>
+                        </div>
+
+
+
+                        <div class="col-md-2 hidden-xs hidden-sm">
+                            <i class="fa fa-spinner fa-3x big-num"></i>
+                        </div>
+
+
+                        <div class="col-md-5">
+                            <p>
+                                Assim que tivermos o projeto arquitetônico da sua obra em mãos, vamos analisar a viabilidade técnica dele.
+                            </p>
+                        </div>
+
+                        <div class="col-md-2 hidden-xs hidden-sm">
+                            <p class="h2">Análise de Viabilidade</p>
+                        </div>
+
+
+                        <div class="col-md-2 hidden-xs hidden-sm">
+                            <p class="big-num">2</p>
+                        </div>
+
+
+                        <div class="col-md-2 hidden-md hidden-lg">
+                            <i class="fa fa-spinner fa-3x big-num"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="cronograma" class="row text-center">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row vertical-align">
+                        <div class="col-md-2">
+                            <p class="big-num">3</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="h2">Cronograma e orçamento</p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                Após concluir a análise de viabilidade, nossa equipe irá elaborar um cronograma e o orçamento para a execução do projeto que passarão pela aprovação do cliente.
+
+                            </p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <i class="fa fa-hourglass fa-3x big-num"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="mao-na-massa" class="row text-center bottom-space">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row vertical-align">
+
+                        <div class="col-md-2 hidden-md hidden-lg">
+                            <p class="big-num">4</p>
+                        </div>
+
+                        <div class="col-md-2 hidden-md hidden-lg">
+                            <p class="h2">Mão na massa!</p>
+                        </div>
+
+                        <div class="col-md-2  hidden-xs hidden-sm">
+                            <i class="fa fa-thumbs-up fa-3x big-num"></i>
+                        </div>
+
+                        <div class="col-md-5">
+                            <p>
+                                Com o cronograma aprovado em mãos, partimos para a tarefa mais importante, que é tirar o projeto do papel.
+                            </p>
+                        </div>
+
+                        <div class="col-md-2  hidden-xs hidden-sm">
+                            <p class="h2">Mão na massa!</p>
+                        </div>
+
+
+                        <div class="col-md-2  hidden-xs hidden-sm">
+                            <p class="big-num">4</p>
+                        </div>
+
+
+                        <div class="col-md-2  hidden-md hidden-lg">
+                            <i class="fa fa-thumbs-up fa-3x big-num"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <p class="h4">Solicite um orçamento para nossa equipe agora mesmo.<br> Nós vamos analisar seu projeto e retornar para conversar.</p>
+            </div>
+            <div class="col-md-6 text-center">
+
+                <a class="typeform-share button btn btn-primary btn-block btn-success" style="font-size: 200%;" href="https://dufuzeto.typeform.com/to/RYYzDm" data-mode="popup" target="_blank">Fazer orçamento </a>
+
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div id="beneficios" class="container">
+
+        <h2 class="text-center bottom-space">Construção em container é mais.</h2>
+
+
+        <div class="row bottom-space">
+
+            <div id="tranquilidade" class="col-md-4">
+                <div class="col-md-10  text-center panel panel-default">
+                    <i class="fa fa-smile-o fa-3x big-num"></i>
+                    <h3>Mais tranquilidade</h3>
+                    <div class="col-md-10 col-md-offset-1">
+                        <p style="margin-top: 25px; margin-bottom: 25px;">Você não precisará lidar com sujeira ou bagunça produzidas por uma obra. Os projetos serão elaborados dentro da fábrica da Delta e você só receberá os containers prontos para serem instalados e utilizados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="agilidade" class="col-md-4">
+                <div class="col-md-10  text-center panel panel-default">
+                    <i class="fa fa-clock-o fa-3x big-num"></i>
+                    <h3>Mais agilidade</h3>
+                    <div class="col-md-8 col-md-offset-2">
+                        <p>Construções em container são, em média<br> <b class="big-num">2x</b><br> mais rápidas
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="economia" class="col-md-4">
+                <div class="col-md-10  text-center panel panel-default">
+
+                    <i class="fa fa-money fa-3x big-num"></i>
+                    <h3>Mais economia</h3>
+                    <div class="col-md-8 col-md-offset-2">
+                        <p>Construções em container são, em média<br> <b class="big-num">30%</b><br> mais baratas
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div id="contato" class="container">
+
+    <h2 class="text-center bottom-space">Tire seu projeto do papel!</h2>
+</div>
+<div class="text-center">
+    <p> Tire todas as suas dúvidas falando com um dos nossos especialistas, basta preencher o formulário abaixo e aguardar o contato da nossa equipe.</p>
+</div>
+<div class="col-md-6 col-md-offset-3 text-center">
+
+    <a class="typeform-share button btn btn-primary btn-block btn-success" style="font-size: 200%;" href="https://dufuzeto.typeform.com/to/RYYzDm" data-mode="popup" target="_blank">Fazer orçamento </a>
+
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.0/bootstrap-slider.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        $("#potencia").change(function(e){
+            potencia = $("#potencia").val();
+            tamanho = $("#tamanho").val();
+            temperatura = $("#temperatura").val();
+            valor = potencia * tamanho * temperatura
+            $("#valor").text(valor)
+            animateElementById("#gasto");
+        });
+
+        $("#tamanho").change(function(e){
+            potencia = $("#potencia").val();
+            tamanho = $("#tamanho").val();
+            temperatura = $("#temperatura").val();
+            valor = potencia * tamanho * temperatura
+            $("#valor").text(valor)
+            animateElementById("#gasto");
+        });
+
+        $('#temperatura').slider({
+            formatter: function(value) {
+                return 'Temperatura: ' + value + "ºC";
+            }
+        });
+
+        $("#temperatura").on("slide", function(slideEvt) {
+            potencia = $("#potencia").val();
+            tamanho = $("#tamanho").val();
+            temperatura = slideEvt.value
+            valor = potencia * tamanho * temperatura
+            $("#valor").text(valor);
+            animateElementById("#gasto");
+        });
+
+        var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+          
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          function animateElementById(string){
+            $(string).addClass("animated pulse")
+            $(string).one(animationEnd, function(){$(string).removeClass("animated pulse")});
+        };
+
+    });
+
+</script>
+
+
+</div>
+</body>
+
