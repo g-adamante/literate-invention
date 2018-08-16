@@ -74,6 +74,9 @@ Se nesse ponto eu ainda não consegui te convencer que definir uma filosofia par
 ![Desisto!](http://i0.kym-cdn.com/photos/images/original/000/220/774/1324501457001.gif)
 Desisto!
 
+{{< subscribe >}}
+
+
 ## Como instalar um sistema operacional que funciona.
 
 Isso não é muito fácil, mas é necessario. As pessoas com mais sucesso no mundo já fizeram isso. 

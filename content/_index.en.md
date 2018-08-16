@@ -10,4 +10,4 @@ I’m Gabriel Adamante. I write about a lot of things, and also fiction (witch I
 
 Right now, I’m living in Spain, and working on a translation of Marcus Aurelius Meditations to portuguese. 
 
-You’ll find here some book notes, what I’m doing right now,my Short Stories (in portuguese, I’m afraid :/ ), and some snippets of code I may have put to use.
+You’ll find here some book notes, what I’m doing right now,my Short Stories (in portuguese, I’m afraid :/ ), and some snippets of code or marketing techniques I may have put to use.

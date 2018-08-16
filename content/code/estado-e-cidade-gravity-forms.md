@@ -18,6 +18,9 @@ Ficou assim:
 
 ![Seletor de Estado e Cidade](/../img/seletor.gif)
 
+{{< subscribe >}}
+
+
 # Passo a passo:
 
 Primeiro: estou assumindo que você está com o Gravity Forms instalado e funcionando. Se não está, [veja aqui como fazer](http://www.wp24horas.com.br/wp-plugins/gravity-forms-plugin-de-formulario-de-contato-mais-amigavel-ao-iniciante-wordpress). 
@@ -52,3 +55,5 @@ PS: Eu estou hospedando o script nessa página. Você pode usar ele sem problema
 Atualize o formulário e teste com Visualizar de novo.
 
 Deve estar funcionando! :) 
+
+{{< subscribe >}}
