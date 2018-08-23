@@ -55,7 +55,7 @@ Quer dizer que todas as campanhas **Alpha** estarão otimizadas ao máximo, gera
 
 E as campanhas **Beta** serão campanhas de "exploração", em que você irá descobrir novas palavras chaves vencedoras para as campanhas **Alpha**.
 
-Basicamente, essa estrutura é um **Garimpo de Keywords**, buscando o ouro (Keywords Alpha) no barro (Keywords Beta).
+Essa estrutura é um **Garimpo de Keywords**, buscando o ouro (Keywords Alpha) no barro (Keywords Beta).
 
 Para implementar isso, o primeiro requisito é que você esteja [registrando conversões](#) em seu website.
 
@@ -77,6 +77,8 @@ A única diferença na implementação entre essas possibilidades é que se sua 
 Se ela é nova, você vai precisar de um tempo para conseguir testar as Keywords Beta antes de implementar o resto.
 
 >Veja o **passo a passo** de [como implementar a estrutura Alpha-Beta](#). (Em breve)
+
+{{< subscribe >}}
 
 ## Como fazer as Campanhas Beta
 
@@ -127,7 +129,7 @@ Depois disso, **criamos três grupos de anúncio**, os dividindo pela semântica
 |-------------------|-----------------------------------------------------|
 |  Aprender Yoga    | +aprender +yoga +online, +aprender +yoga +vinyasa   |
 | Aulas de Yoga     | +aulas +yoga +internet, +aulas +yoga +iniciantes    |
-| Professor de Yoga | +professor +yoga +online, +professor +yoga +vinyasa |
+| Professor de Yoga | +professor +yoga +online, +professor +yoga +vi+nyasa|
 
 Habilite a campanha e...
 
@@ -138,6 +140,8 @@ Dependendo do seu orçamento, pode demorar alguns dias.
 ![Espere...](/../img/fantastic-mr-fox-time.gif)  
 
 Agora, nós começamos a otimizar!
+
+{{< subscribe >}}
 
 ### Pause e Negative os termos ruins 
 
@@ -167,4 +171,45 @@ Para contas pequenas e médias, que priorizam a performance de seus anúncios e 
 
 **Como implementar as Campanhas Alpha:**
 
-Primeiro, criamos uma campanha 
+Primeiro, criamos as campanhas Alpha com um nome padrão:
+
+> Pesquisa - Brasil - **Alpha** - Aprender Yoga
+
+> Pesquisa - Brasil - **Alpha** - Professor Yoga
+
+> Pesquisa - Brasil - **Alpha** - Aulas Yoga
+ 
+Por conta dos grupos de anúncios granulares, é recomendável dividir as campanhas Alpha. 
+
+E dentro da campanha, iremos criar grupos de anúncios com as palavras chave boas no nosso Relatório de Tempo de Pesquisa.
+
+Supondo que nossos termos de pesquisa vencedores que você extraiu da palavra chave "+aprender +yoga +online" tenham sido: "aprender yoga vinyasa online" e "como aprender yoga online".
+
+Agora, os grupos de anúncios terão palavras chave de correspondência **exata**:
+
+| Grupo de Anúncios                |  Keyword                           |
+|----------------------------------|------------------------------------|
+| aprender yoga vinyasa online     | [aprender yoga vinyasa online]     |
+| como aprender yoga online        | [como aprender yoga online]        |
+
+Agora, como seu grupo de anúncio só tem uma palavra, vocêpode fazer um Anúncio muito específico - isso vai tornar seu CTR maior, e a qualidade dos anúncios fica entre 9 e 10.
+
+Para as palavras chave que performam **extremamente** bem, você deve considerar fazer até uma Landing Page específica.
+
+### Negative as palavras chave das Campanhas Alpha nas Campanhas Beta
+
+Você quer que quando alguém pesquise "aprender yoga vinyasa online" no Google, o Google mostre seu anúncio específico, com índice de qualidade alto. 
+
+Mas essa palavra chave ainda está disparando para a campanha Beta que configuramos - assim, pode ser que ele mostre o anúncio genério com um índice de qualidade ~meh. 
+
+Para evitar que isso aconteça, coloque todas as palavras chave de correspondência exata em uma lista de palavras chave negativas - Palavras Chave Alpha. 
+
+Exclua as Palavras Chave Alpha em suas Campanhas Beta.
+
+Você acabou de terminar a melhor estrutura de campanha possível para o Adwords.
+
+O processo de gerar mais keywords Alpha e negativar os termos - chamado de higienização da conta - deve ser repetido uma vez por semana ou a cada 15 dias.
+
+Seguindo esse sistema, você deve conseguir manter uma conta de Adwords lucrativa, sem manutenção excessiva.
+
+{{< subscribe >}}
