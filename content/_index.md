@@ -10,6 +10,6 @@ Eu sou [Gabriel Adamante](/about "Gabriel Adamante"). Eu escrevo sobre [várias 
 
 [Agora](/now/ "Agora"), eu estou vivendo na Espanha, e trabalhando em uma tradução do livro Meditações, de Marco Aurélio para português.
 
-Além disso, você vai encontrar aqui [anotações](/notes/ "anotações") sobre livros e outras coisas, e alguns racunhos sobre [códigos e marketing](/code/ "códigos e marketing") mal feitos que eu escrevi.
+Além disso, você vai encontrar aqui [anotações](/notes/ "anotações") sobre livros e outras coisas, e alguns [rascunhos sobre marketing e códigos](/code/ "rascunhos sobre marketing e códigos") que eu escrevi.
 
 
