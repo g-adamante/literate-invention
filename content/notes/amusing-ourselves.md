@@ -1,10 +1,10 @@
 ---
-title: "Amusing Ourselves"
+title: "Amusing Ourselves to Death "
 date: 2018-04-06T17:47:02+02:00
 draft: false
 ---
 Livro: 
-# Google Analtyics Breakthrough 
+# Amusing Ourselves to Death 
 Autor:
 Neil Postman
 

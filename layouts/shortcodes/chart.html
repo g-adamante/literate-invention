@@ -1,0 +1,40 @@
+    <div id="chart-container" style="height:{{ with .Get "height"}}{{.}}{{ end }};">
+            <canvas id="{{ with .Get "id"}}{{.}}{{ end }}"></canvas>
+    </div>
+   <script>
+        var stringData =  {{ with .Get "data"}}{{.}}{{ end }}
+        stringData = stringData.slice(1,stringData.length - 1)
+        stringData = stringData.split(",")
+            var ctx = document.getElementById("{{ with .Get "id"}}{{.}}{{ end }}");
+            var myChart = new Chart(ctx, {
+                // The type of chart we want to create
+        type: 'line',
+    
+        // The data for our dataset
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [{
+                label: "Profit",
+                borderColor: 'rgb(0, 68, 8)',
+                backgroundColor: 'rgb(12, 204, 34)',
+                data: stringData,
+            }]
+        },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    title: {
+                        display: true,
+                        text: '{{ with .Get "title"}}{{.}}{{ end }}'
+                    },        
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                suggestedMin: -100,
+                                suggestedMax: 100
+                            }
+                        }]
+                    }
+                }
+            });
+            </script>
