@@ -1,0 +1,37 @@
+
+<canvas id="pyramid{{ .Get "id" }}" width="330" height="200"></canvas>
+
+<script>
+
+
+        var draw = {{ .Get "number" }};
+
+
+        var rc = rough.canvas(document.getElementById('pyramid{{ .Get "id" }}'));
+        
+        rc.rectangle(50, 75, 200, 50, {
+          fill: 'blue',
+          hachureAngle: 60,
+          hachureGap: 5,
+          fillWeight: 1,
+          strokeWidth: 1
+        });;
+          if(draw>=2){
+        rc.rectangle(0, 140, 300, 50, {
+          fill: 'blue',
+          hachureAngle: 60,
+          hachureGap: 5,
+          fillWeight: 1,
+          strokeWidth: 1
+        });
+        }
+        if(draw==3){
+              rc.rectangle(100, 10, 100, 50, {
+              fill: 'blue',
+              hachureAngle: 60,
+              hachureGap: 5,
+              fillWeight: 1,
+              strokeWidth: 1
+            });
+          };
+</script>

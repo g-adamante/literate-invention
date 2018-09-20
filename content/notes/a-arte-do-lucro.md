@@ -7,6 +7,7 @@ Embora fácil de ler, **ele é denso, com ideias complexas**, que precisam ser r
 ---
 
 {{<chart-script>}}
+{{<rough-script>}}
 
 **Livro:** A Arte do Lucro
 
@@ -26,6 +27,7 @@ Eu gostei dos modelos que vou fazer notas detalhadas sobre cada um deles, junto 
 
 ---
 - [Lucro de Solução do Cliente](#lucro-de-solução-do-cliente-costumer-solution-profit)
+- [Lucro em Pirâmide](#lucro-em-pirâmide-pyramid-profit)
 
 ---
  
@@ -54,3 +56,44 @@ Eles investiam muito dinheiro nesta fase, e **quase não faturavam nada**.
 Até a hora que o produto estava pronto e começava a ser integrado no dia a dia do seu cliente. As soluções eram tão bem pensadas e específicas que **geravam valor gigantesco para o cliente**, **aumentando o faturamento da empresa**. 
 
 E ao mesmo tempo, as três pessoas que passaram tanto tempo pensando em como entegrar isso não eram mais necessárias - com somente alguém para dar manutenção, a Factsect mantia seus clientes felizes com um único funcionário.
+
+
+## Lucro em Pirâmide - *Pyramid Profit*
+
+{{<pyramid-profit id="1" number="3">}}
+
+Não, isso não tem **nada a ver com pirâmides financeiras**, como [TelexFree](#) e [BitConnect](#).
+
+É um modelo de Lucro muito interessante e mais fácil de identificar no varejo.
+
+Para exemplificar, Zhao usa a [Mattel](#). 
+
+A  Mattel vende diversos brinquedos, sendo dos mais populares as **bonecas da Barbie**.
+
+Uma boneca Barbie padrão deve estar em torno de **$30**.
+
+Sendo assim, temos uma linha de produtos com preço médio:
+
+{{<pyramid-profit id="2" number="1">}}
+
+Mas se a Mattel não for cuidadosa, seus concorrentes podem produzir bonecas mais baratas e começar a ganhar mercado.
+
+Então você faz uma muralha para impedir que seus concorrentes façam isso.
+
+Ela desenvolve uma boneca Barbie de $10. Ela quase não é lucrativa, mas **previne que outras empresas roubem sua fatia de mercado**.
+
+Agora, temos uma linha de produtos com preço médio, e outra com preço baixo:
+
+{{<pyramid-profit id="3" number="2">}}
+
+Agora, que a Mattel está com linhas estabelecidas de produtos de médio e baixo valor. 
+
+**Onde ela ataca?**
+
+*Os produtos de luxo.*
+
+Barbies com margens muito mais altas, de $300. 
+
+{{<pyramid-profit id="4" number="3">}}
+
+Ao fim, você acaba com um sistema cuidadosamente planejado para se defender de concorrentes, e gerar lucro em todas as faixas de preço.
