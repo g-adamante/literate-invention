@@ -45,9 +45,19 @@
 }
 @media only screen and (max-width: 600px) {
     .header {
+    background-color: #4062bb;
+    background-image: linear-gradient(100deg, #4062bb, #5200ae, #a23b72,  #c73e1d, #a23b72, #5200ae, #4062bb);
+    border-radius: 0;
+    margin-bottom:0;
     padding: 25px;
+
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+	-moz-animation: Gradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+	animation: Gradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
     }
 }
+
 
 @-webkit-keyframes Gradient {
 	0% {
