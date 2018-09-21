@@ -28,6 +28,7 @@ Eu gostei dos modelos que vou fazer notas detalhadas sobre cada um deles, junto 
 ---
 - [Lucro de Solução do Cliente](#lucro-de-solução-do-cliente-costumer-solution-profit)
 - [Lucro em Pirâmide](#lucro-em-pirâmide-pyramid-profit)
+- [Lucro Multi-Componente](#lucro-multi-componente-multi-component-profit)
 
 ---
  
@@ -58,15 +59,18 @@ Até a hora que o produto estava pronto e começava a ser integrado no dia a dia
 E ao mesmo tempo, as três pessoas que passaram tanto tempo pensando em como entegrar isso não eram mais necessárias - com somente alguém para dar manutenção, a Factsect mantia seus clientes felizes com um único funcionário.
 
 
+Empresas que utilizam esse modelo com maestria: **[Palantir(?)](https://pt.wikipedia.org/wiki/Palantir_Technologies)**. Me mande um @ no Twitter se pensar em mais. 
+
+
 ## Lucro em Pirâmide - *Pyramid Profit*
 
 {{<pyramid-profit id="1" number="3">}}
 
-Não, isso não tem **nada a ver com pirâmides financeiras**, como [TelexFree](#) e [BitConnect](#).
+Não, isso não tem **nada a ver com pirâmides financeiras**, como [TelexFree](https://pt.wikipedia.org/wiki/Telexfree) e [BitConnect](https://en.m.wikipedia.org/wiki/Bitconnect).
 
 É um modelo de Lucro muito interessante e mais fácil de identificar no varejo.
 
-Para exemplificar, Zhao usa a [Mattel](#). 
+Para exemplificar, Zhao usa a [Mattel](https://pt.wikipedia.org/wiki/Mattel). 
 
 A  Mattel vende diversos brinquedos, sendo dos mais populares as **bonecas da Barbie**.
 
@@ -88,7 +92,7 @@ Agora, temos uma linha de produtos com preço médio, e outra com preço baixo:
 
 Agora, que a Mattel está com linhas estabelecidas de produtos de médio e baixo valor. 
 
-**Onde ela ataca?**
+**O que ela ataca?**
 
 *Os produtos de luxo.*
 
@@ -97,3 +101,9 @@ Barbies com margens muito mais altas, de $300.
 {{<pyramid-profit id="4" number="3">}}
 
 Ao fim, você acaba com um sistema cuidadosamente planejado para se defender de concorrentes, e gerar lucro em todas as faixas de preço.
+
+Empresas que utilizam esse modelo com maestria: **Apple**, montadoras de carros. 
+
+## Lucro Multi-Componente - *Multi-Component Profit*
+
+{{<multi-component-profit id="1">}}
