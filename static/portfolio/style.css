@@ -10,6 +10,15 @@
     background-color:rgba(128, 128, 128, 0.226);
 }
 
+.list-text {
+	font-size:140%;
+	color:#212529;
+}
+
+.badge-abilities {
+	font-size:95%;
+}
+
 .portfolio {
     padding-top:50px;
     padding-bottom:50px;
@@ -59,6 +68,7 @@
 }
 
 
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -94,4 +104,3 @@
 		background-position: 0% 50%
 	}
 }
-

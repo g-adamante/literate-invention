@@ -1,16 +1,17 @@
- var granimInstance = new Granim({
-    element: '#header',
-    name: 'basic-gradient',
-    direction: 'left-right', // 'diagonal', 'top-bottom', 'radial'
-    opacity: [1, 1],
-    isPausedWhenNotInView: true,
-    states : {
-        "default-state": {
-            gradients: [
-                ['#AA076B', '#61045F'],
-                ['#02AAB0', '#00CDAC'],
-                ['#DA22FF', '#9733EE']
-            ]
-        }
+function doAnimation(id, animName, duration, delay) {
+    var el = document.getElementById(id);
+    var timer;
+    function addClass() {
+        el.classList.add(animName);
     }
-});
+    function removeClass() {
+        el.classList.remove(animName);
+    }
+    setInterval(function () {
+        clearTimeout(timer);
+        addClass();
+        timer = setTimeout(removeClass, duration);
+    }, duration + delay);
+}
+
+doAnimation('conversar', 'shake', 1000, 2500);
