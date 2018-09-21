@@ -1,0 +1,64 @@
+
+<canvas id="multi-component{{ .Get "id" }}" width="330" height="200"></canvas>
+
+<script>
+
+
+  var rc = rough.canvas(document.getElementById('multi-component{{ .Get "id" }}'));
+
+  rc.rectangle(5, 75, 75, 75, {
+      fill: 'blue',
+      hachureAngle: 60,
+      hachureGap: 5,
+      fillWeight: 1,
+      strokeWidth: 1,
+      roughness: 1.8
+    });
+
+
+  rc.rectangle(120, 25, 45, 45, {
+      fill: 'blue',
+      hachureAngle: 60,
+      hachureGap: 5,
+      fillWeight: 1,
+      strokeWidth: 1,
+      roughness: 1.8
+    });
+
+    rc.rectangle(120, 85, 45, 45, {
+      fill: 'blue',
+      hachureAngle: 60,
+      hachureGap: 5,
+      fillWeight: 1,
+      strokeWidth: 1,
+      roughness: 1.8
+    });
+    
+
+    rc.rectangle(120, 145, 45, 45, {
+      fill: 'blue',
+      hachureAngle: 60,
+      hachureGap: 5,
+      fillWeight: 1,
+      strokeWidth: 1,
+      roughness: 1.8
+    });
+
+    rc.line(84, 72, 115, 45,{
+      strokeWidth: 1.5,
+      roughness: 1.8
+    });
+
+    rc.line(85, 110, 115, 110,{
+      strokeWidth: 1.5,
+      roughness: 1.8
+    });
+
+    rc.line(84, 153, 115, 170,{
+      strokeWidth: 1.5,
+      roughness: 1.8
+    });
+
+  
+
+</script>
