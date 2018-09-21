@@ -38,7 +38,23 @@
 .header a{
     color: aquamarine;
 }
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  stroke: green !important;
+}
 
+.ct-series-a .ct-line{
+	stroke-dasharray: 5 !important;
+	animation: dash 5s linear infinite !important;
+	
+}
+
+
+@keyframes dash {
+	to {
+	  stroke-dashoffset: -100;
+	}
+  }
 
 .header {
     background-color: #4062bb;
