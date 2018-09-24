@@ -35,23 +35,33 @@
     </div>
     <div class="container-fluid do">
 
-
-        <h1 class="display-3 text-center"> Eu faço você <b>vender mais</b> </h1>
         <div class="row justify-content-center">
-            <div class="ct-chart ct-minor-seventh" style="max-height:400px;max-width:720px;">
-                </div>
+            <div>
+                <h1 class="display-3 text-center">Eu faço você</h1>
+            </div>
+            <div style="margin-left:15px;">
+                <h1 class="display-3 text-center" id="mais"><b>vender mais</b></p>
+                </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div id="chart1" class="ct-chart ct-minor-seventh hvr-grow" style="max-height:400px;max-width:720px;">
+
+            </div>
             <div class="col-12">
                 <p class="lead text-center">Meu processo é <i>simples</i>.</p>
             </div>
             <div>
                 <ol class="lead text-justify list">
-                    <li class="text-muted"><span class="lead list-text">Eu <b>identifico canais</b> com potêncial.</span></li>
+                    <li class="text-muted" id="waypoint2"><span class="lead list-text">Eu <b>identifico canais</b> com
+                            potencial.</span></li>
                     <li class="text-muted"><span class="lead list-text">Eu <b>faço um plano</b> para nos levar até
                             lá.</span></li>
                     <li class="text-muted"><span class="lead list-text">Eu <b>executo</b> esse plano. Seja qual
                             for.</span></li>
                     <li class="text-muted"><span class="lead list-text">Eu <b>meço e analiso</b> os resultados.</span></li>
-                    <li class="text-muted"><span class="lead list-text">Eu <b>automatizo e otimizo</b> o que
+                    <li class="text-muted" id="waypoint3"><span class="lead list-text">Eu <b>automatizo e otimizo</b> o
+                            que
                             funciona.</span></li>
                 </ol>
             </div>
@@ -61,7 +71,8 @@
     <div class="jumbotron">
         <div class="row text-center">
             <div class="col">
-                <p class="display-3">Marketing.</p>
+                <p class="display-3 card-title display-4 d-none d-md-block">Marketing.</p>
+                <p class="card-title display-4 d-block d-sm-block d-md-none" style="font-size:200%;font-weight:bold;">Marketing.</p>
                 <p>Eu trabalho com funis, com especialidade em atração.</p>
                 <span class="badge badge-success badge-abilities">SEO</span>
                 <span class="badge badge-success badge-abilities">SEM</span>
@@ -74,7 +85,8 @@
 
             </div>
             <div class="col justify-content-right">
-                <p class="display-3">Desenvolvimento.</p>
+                <p class="display-3 card-title display-4 d-none d-md-block">Desenvolvimento.</p>
+                <p class="card-title display-4 d-block d-sm-block d-md-none" style="margin-top:25px;font-size:200%;font-weight:bold;">Desenvolvimento.</p>
                 <p>Automações, configurações, otimizações.</p>
 
                 <span class="badge badge-success badge-abilities">HTML</span>
@@ -96,42 +108,77 @@
 
     </div>
 
+
     <div class="container-fluid portfolio">
         <h1 class="text-center" style="padding-bottom:50px;"> Meu portfólio </h1>
-        <div class="row align-items-center">
-            <div class="col-4">
-                <img class="img-responsive" src="delta.jpg" width="450px">
-            </div>
-            <div class="col-8" style="padding:50px;">
-                <h2>Delta Containers.</h2>
-                <p>70% de aumento em vendas. 200% de aumento de geração de leads. 400% de aumento no tráfego.</p>
-            </div>
 
+
+        <div class="card bg-light hvr-grow" style="width: 80%; margin-left:10%;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4 d-none d-md-block">
+                        <img class="card-img" src="delta.svg" height="200px;" alt="Card image cap">
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <h6 class="card-title display-4 d-block d-sm-block d-md-none" style="font-size:190%;font-weight:bold;">Delta
+                            Containers</h6>
+                        <h5 class="card-title display-4 d-none d-md-block">Delta Containers</h5>
+                        <p class="card-text">Projeto completo de Marketing: atração, conversão e automatização.</p>
+                        <h6 style="display:inline;">Vendas <span class="badge badge-success">+80%</span></h6>
+                        <h6 style="display:inline">Leads <span class="badge badge-success">+250%</span></h6>
+                        <h6 style="display:inline">Tráfego <span class="badge badge-success">+100%</span></h6><br>
+                        <a href="#" class="btn btn-lg btn-primary" style="margin-top:10px;">Conheça o case</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="row align-items-center" style="padding-top:50px;">
-            <div class="col-4">
-                <img class="img-responsive" src="delta.jpg" width="450px">
+        <div class="card bg-light hvr-grow" style="width: 80%; margin-left:10%;margin-top:25px;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4 d-none d-md-block">
+                        <div class="card text-center align-items-center text-white bg-primary" style="width:90%;height:200px;">
+                            <div class="card-body" style="margin-top:10%;">
+                                <span class="review" style="font-size:310%;line-height:1">Review</span><br>
+                                <span class="boxes" style="font-size:400%;line-height:0.5">BOXES</span>
+                            </div>
+                        </div>
+                    </div>
+              
+            <div class="col-md-8 col-sm-12">
+                <h6 class="card-title display-4 d-block d-sm-block d-md-none" style="font-size:190%;font-weight:bold;">Review
+                    Boxes</h6>
+                <h5 class="card-title display-4 d-none d-md-block">Review Boxes</h5>
+                <p class="card-text"><i>Uma maneira simples de demonstrar que seus clientes te amam.</i><br>De ideia à execução, desenvolvimento front & back end, e marketing.</p>
+                <a href="#" class="btn btn-secondary btn-lg disabled">Case em breve</a>
             </div>
-            <div class="col-8" style="padding:50px;">
-                <h2>ReviewBoxes.</h2>
-                <p>70% de aumento em vendas. 200% de aumento de geração de leads. 400% de aumento no tráfego.</p>
-            </div>
-
         </div>
+    </div>
+    </div>
 
 
+    <div class="card bg-light  hvr-grow" style="width: 80%; margin-left:10%;margin-top:25px;">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4 d-none d-md-block justify-content-center">
+                    <img class="card-img" src="ctbz.png" style="max-height:200px;max-width:200px;padding-left:40px;" alt="Card image cap">
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <h6 class="card-title display-4 d-block d-sm-block d-md-none" style="font-size:190%;font-weight:bold;">Contabilizei</h6>
+                    <h5 class="card-title display-4 d-none d-md-block">Contabilizei</h5>
+                    <p class="card-text">Milhares de acessos..</p>
 
-        <div class="row" style="padding-top:50px;">
-            <div class="col-4">
-                <img class="img-responsive" src="delta.jpg" width="450px">
+                </div>
             </div>
-            <div class="col-8" style="padding:50px;">
-                <h2>Contabilizei.</h2>
-                <p>SEO gerando centenas de milhares de acessos na página.</p>
-            </div>
-
         </div>
+    </div>
+
+
+
+
+
+
+
 
     </div>
 
@@ -140,15 +187,17 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|VT323" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 
