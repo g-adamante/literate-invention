@@ -67,7 +67,7 @@ var data = {
     element: $('#waypoint2'),
     handler: function() {
         $('#mais').addClass('tada')
+        $('#aquisicao').addClass('animated tada')
     } ,
     offset: 355 
   })
-
