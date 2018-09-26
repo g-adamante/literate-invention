@@ -30,7 +30,7 @@
             Eu planejo, desenvolvo, faço marketing, design, e o que for necessário para isso.<br>
             <br>
         </p>
-        <h1 class="animated" id="conversar"> <a href="#">Vamos Conversar</a> </h1>
+        <h1 class="animated" id="conversar"> <a href="#"  data-toggle="modal" data-target="#contactModal" >Vamos Conversar</a> </h1>
     </div>
     <div class="jumbotron do bg-light">
         <div class="row justify-content-center">
@@ -53,28 +53,29 @@
         </div>
         <div class="row align-content-center justify-content-center">
             <div class="col-sm-12 col-md-4 text-center hvr-grow" id="aquisicao" style="padding-bottom:25px;">
-                    <object type="image/svg+xml" class="img-fluid" style="max-height: 75px;" data="magnet.svg">SVG</object>
-                <br><p class="display-4" style="color:#007bff;">aquisição</p>
-                <ul>
-                    <li>exploro e testo canais com maior potencial</li>
-                    <li>escalo os canais que funcionam melhor</li>
-                </ul>
+                <object type="image/svg+xml" class="img-fluid" style="max-height: 75px;" data="magnet.svg">SVG</object>
+                <br>
+                <p class="display-4" style="color:#007bff;">aquisição</p>
+
+                <span>exploro e testo canais com maior potencial</span><br>
+                <span>escalo os canais que funcionam melhor</span>
+
             </div>
             <div class="col-sm-12 col-md-4 text-center hvr-grow" id="conversao" style="padding-bottom:25px;">
-                    <object type="image/svg+xml" class="img-fluid" style="max-height: 75px;" data="cash.svg">SVG</object>
-                    <br><p class="display-4" style="color:green;">conversão</p>
-                <ul>
-                    <li>encontro mensagens com maior performance</li>
-                    <li>otimizo sua conversão com landing pages </li>
+                <object type="image/svg+xml" class="img-fluid" style="max-height: 75px;" data="cash.svg">SVG</object>
+                <br>
+                <p class="display-4" style="color:green;">conversão</p>
+                <span>encontro mensagens com maior performance</span><br>
+                <span>otimizo sua conversão com landing pages </span>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-4 text-center hvr-grow" id="magica" style="padding-bottom:25px;">
+            <div class="col-sm-12 col-md-4 text-center justify-content-center hvr-grow" id="magica" style="padding-bottom:25px;">
                 <object type="image/svg+xml" class="img-fluid" style="max-height: 75px;" data="magic.svg">SVG</object>
-                <br><p class="display-4" style="color:red;">mágica</p>
-                <ul>
-                    <li>automatizo o trabalho repetitivo</li>
-                    <li>desenvolvo o que for necessário</li>
-                </ul>
+                <br>
+                <p class="display-4" style="color:red;">mágica</p>
+                <span>automatizo o trabalho repetitivo</span>
+                <br><span>desenvolvo o que for necessário</span>
+
             </div>
         </div>
     </div>
@@ -186,13 +187,45 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- modal button -->
+
+    <button type="button" data-toggle="modal" data-target="#contactModal" class="btn btn-primary btn-lg hvr-grow d-none"
+        id="cta" style="position:fixed;right:10px;bottom:10px;z-index:101;color:white;">
+        Vamos conversar </button>
 
 
-
-
-
-
-
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Vamos conversar!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Se você preferir, pode enviar um e-mail diretamente para: <b><a href="mailto:gabriel@adamante.com.br">gabriel@adamante.com.br</a></b></p>
+                    <form name="contact" method="POST" netlify>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Seu e-mail:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensagem:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                </div>
+            </form>
+            </div>
+        </div>
     </div>
 
 

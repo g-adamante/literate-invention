@@ -42,6 +42,8 @@ var data = {
         $('.ct-bar').removeClass('chart-hidden')
         $('.ct-bar').addClass('zoomIn')
         $('#mais').addClass('animated tada')
+        $('#cta').removeClass('d-none')
+        $('#cta').addClass('animated bounceInLeft')
     },
     offset: 150 
   })
