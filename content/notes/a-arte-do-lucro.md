@@ -4,6 +4,9 @@ date: 2018-09-04T17:47:02+02:00
 draft: false
 description: "O livro descreve **23 modelos de negócio lucrativo** que o protagonista, Zhao, identificou. Ensina por meio de parábolas, contando histórias de empresas que aplicaram o modelo em questão para gerar lucro.
 Embora fácil de ler, **ele é denso, com ideias complexas**, que precisam ser revisitadas várias vezes para as absorver de verdade."
+H1: "A Arte do Lucro - Resumo do Livro (+23 tipos de Lucro geniais)"
+SEOTitle: "A Arte do Lucro - Resumo do Livro (+23 tipos de Lucro geniais)"
+metaDescription: "Resumo do livro a Arte do Lucro e dos 23 modelos de negócio lucrativo apresentados. O livro ensina por meio de parábolas, contando histórias de empresas que aplicaram o modelo em questão para gerar lucro"
 ---
 
 {{<chart-script>}}
@@ -29,6 +32,7 @@ Eu gostei dos modelos que vou fazer notas detalhadas sobre cada um deles, junto 
 - [Lucro de Solução do Cliente](#lucro-de-solução-do-cliente-costumer-solution-profit)
 - [Lucro em Pirâmide](#lucro-em-pirâmide-pyramid-profit)
 - [Lucro Multi-Componente](#lucro-multi-componente-multi-component-profit)
+- [Lucro com Quadro de Distribuição](#lucro-com-quadro-de-distribuição-switchboard-profit)
 
 ---
  
@@ -107,3 +111,33 @@ Empresas que utilizam esse modelo com maestria: **Apple**, montadoras de carros.
 ## Lucro Multi-Componente - *Multi-Component Profit*
 
 {{<multi-component-profit id="1">}}
+
+Um Modelo de Lucro bastante comum. Deve funcionar em uma maioria de negócios B2C.
+
+Como exemplo, Zhao conta dois casos, um deles a **Coca Cola**. 
+
+O segredo deste modelo de negócio é ter muitos **componentes de negócio**. Com apenas um produto, você pode ter vários negócios. Alguns deles, muito lucrativos. Outros, nem tanto - eles podem servir a outro propósito.
+
+A Coca, por exemplo, tem alguns componentes:
+
+- Venda em Restaurantes
+- Venda em Supermercados
+- Venda em Máquinas Automáticas
+
+Cada um destes componentes tem uma lucratividade diferente.
+
+Pense em quanto você paga por 100ml de Coca em cada situação.
+
+Em um restaurante, uma lata deve estar em torno de R$5. Isso significa que 100ml custam R$1,51
+
+Em um supermercado, você compra 2 litros por 8 reais. Isso significa que 100ml custam R$0,40.
+
+Em uma máquina de venda, deve estar cerca de R$3,00 - R$0,90 por 100ml.
+
+A diferença entre o lucro de multi-componente e de pirâmide é que **o consumidor compra o mesmo produto em todas as faixas de preço** - o mesmo produto, vários negócios diferentes.
+
+## Lucro com Quadro de Distribuição - *Switchboard Profit*
+
+{{<switchboard-profit id="1">}}
+
+Um dos modelos mais elegantes do livro, e pessoalmente, um dos meus favoritos.

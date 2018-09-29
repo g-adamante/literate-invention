@@ -9,7 +9,7 @@
 
         var rc = rough.canvas(document.getElementById('pyramid{{ .Get "id" }}'));
         
-        rc.rectangle(50, 85, 200, 50, {
+        rc.rectangle(70, 85, 100, 40, {
           fill: 'blue',
           hachureAngle: 60,
           hachureGap: 5,
@@ -18,7 +18,7 @@
           roughness: 1.8
         });;
           if(draw>=2){
-        rc.rectangle(0, 150, 300, 50, {
+        rc.rectangle(40, 150, 150, 40, {
           fill: 'blue',
           hachureAngle: 60,
           hachureGap: 5,
@@ -28,7 +28,7 @@
         });
         }
         if(draw==3){
-              rc.rectangle(100, 20, 100, 50, {
+              rc.rectangle(100, 20, 50, 40, {
               fill: 'blue',
               hachureAngle: 60,
               hachureGap: 5,
