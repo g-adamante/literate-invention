@@ -3,11 +3,12 @@ title: "Como usar as Conversões Assistidas do Google Analytics"
 date: 2018-08-16T14:10:11+02:00
 draft: false
 description: "Descubra o que é o Relatório de Conversões Assistidas do Google Analytics e use como um profissonal para descobrir quais seus melhores conteúdos."
+H1: "Conversões Assistidas do Analytics: descubra o que são e as use como um Profissional"
+SEOTitle: "Conversões Assistidas do Analytics (aprenda a usar feito PRO)"
+metaDescription: "O que é o Relatório de Conversões Assistidas do Google Analytics? Aprenda a o usar como um profissonal para descobrir quais seus melhores conteúdos."
 ---
 
-Se você tem um website que está registrando conversões de qualquer tipo através do Google Analytics, você deve conhecer o Relatório de **Conversões Assistidas**
-
-Embora possam parecer um pouco assustadores no começo, os Relatórios de Funis Multicanal são muito úteis.
+Se você tem um website que está registrando conversões de qualquer tipo através do Google Analytics, você **TEM** que conhecer o Relatório de **Conversões Assistidas**:
 
 ## O que são Conversões Assistidas?
 
