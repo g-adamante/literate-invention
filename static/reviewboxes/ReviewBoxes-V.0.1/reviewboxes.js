@@ -26,7 +26,7 @@ function renderReviews(jsonObj){
 
     var body = document.getElementsByTagName("body");
     body = body[0];
-    var node = document.createElement("DIV"); 
+    var node = document.createElement("div"); 
     node.id += "reviews";
     body.appendChild(node)
 
@@ -55,8 +55,8 @@ function renderReviews(jsonObj){
         reviewRating = renderStars(reviewRating);
 
         reviewDiv.id += "reviewBox" + reviewId
-        reviewDiv.className += "col-md-4 card notification hidden"
-        reviewDiv.innerHTML = "<div class='card-body'><h4 class='card-title'>"+reviewAuthor+"</h4><h6 class='card-subtitle mb-2 text-muted'>"+reviewDate+"</h6>"+reviewRating+"<p class='card-text'>"+reviewText+"</p><a id='close'><span style='top: 15px;right: 20px;position: absolute;font-size: 150%;font-weight: 900;' onclick='closePopUp(event)' class='icon-close-full card-text'></span></a><img src='"+reviewSource+".png' class='img img-responsive' style='right:10px;position: absolute;bottom: 10px;' height='30px;'></div>"
+        reviewDiv.className += "reviewboxes reviewboxes-col-md-4 reviewboxes-card reviewboxes-notification reviewboxes-hidden reviewboxes-animated"
+        reviewDiv.innerHTML = "<div class='reviewboxes reviewboxes-card-body'><h4 class='reviewboxes reviewboxes-card-title'>"+reviewAuthor+"</h4><h6 class='reviewboxes reviewboxes-card-subtitle reviewboxes-mb-2 reviewboxes-text-muted'>"+reviewDate+"</h6>"+reviewRating+"<p class='reviewboxes reviewboxes-card-text'>"+reviewText+"</p><a class='reviewboxes' id='close'><span style='top: 15px;right: 20px;position: absolute;font-size: 150%;font-weight: 900;' onclick='closePopUp(event)' class='reviewboxes reviewboxes-icon-close-full reviewboxes-card-text'></span></a><img src='/ReviewBoxes-V.0.1/"+reviewSource+".png' class='reviewboxes reviewboxes-img reviewboxes-img-responsive' style='right:10px;position: absolute;bottom: 10px;' height='30px;'></div>"
         
         node.appendChild(reviewDiv);
 
@@ -70,17 +70,17 @@ function renderReviews(jsonObj){
 }
 
 var renderStars = function(rating){
-    var stars = "<h6 class='card-subtitle mb-2 text-muted'>";
+    var stars = "<h6 class='reviewboxes reviewboxes-card-subtitle reviewboxes-mb-2 reviewboxes-text-muted'>";
                       
     // fill in gold stars
     for (var i = 0; i < rating; i++) {
-      stars = stars+"<span class='icon-star-full star-size checked'></span>";
+      stars = stars+"<span class='reviewboxes reviewboxes-icon-star-full reviewboxes-star-size reviewboxes-checked'></span>";
     };
 
     // fill in empty stars
     if(rating < 5){
       for (var i = 0; i < (5 - rating); i++) {
-        stars = stars+"<span class='icon-star-full star-size'></span>";
+        stars = stars+"<span class='reviewboxes reviewboxes-icon-star-full reviewboxes-star-size'></span>";
       };
     }
     stars = stars+"</h6>";
@@ -95,8 +95,18 @@ function slideDownUp(elem, ms) {
         elem.style.maxHeight = '0';
         elem.style.opacity = '0';
     });
+}
 
 
+function slideDownUpAnimate(elem, ms) {
+  elem.classList.remove('reviewboxes-hidden')
+  elem.classList.remove('reviewboxes-fadeOutDown')
+  elem.classList.add('reviewboxes-fadeInUp')
+  sleep(ms).then(function(){
+    elem.classList.remove('reviewboxes-fadeInUp')
+    elem.classList.add('reviewboxes-fadeOutDown')
+    
+  });
 }
 
 function sleep(ms) {
@@ -114,7 +124,7 @@ async function delayedPop(item, intervalMS, displayMS){
   
   await sleep(intervalMS);
   
-  slideDownUp(item, displayMS);
+  slideDownUpAnimate(item, displayMS);
 }
 
 async function processArray(array, intervalMS, displayMS){
@@ -124,7 +134,7 @@ async function processArray(array, intervalMS, displayMS){
 }
 function loop(intervalMS, displayMS){
 
-  var popUpArray = Array.from(document.getElementsByClassName('notification'));
+  var popUpArray = Array.from(document.getElementsByClassName('reviewboxes-notification'));
   
   totalMS = intervalMS + displayMS
 
