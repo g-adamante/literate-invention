@@ -1,48 +1,284 @@
 ---
-title: "Como eu usei uma Cadeia De Markov para misturar as letras de funk proibidão e música gospel"
+title: "Criando um Gerador de Letras com Cadeias de Markov em Python"
 date: 2018-09-29T16:49:03+02:00
 draft: false
+description: "Usando Python e alguma criativdade, você consegue gerar letras bastante engraçadas."
+H1: "Aprenda a usar Cadeias de Markov criando um gerador de letras que mistura Gospel e Funk Proibidão"
+SEOTitle: "Fazendo Cadeia de Markov em Python gerar letras de música"
+metaDescription: "Como eu misturei Funk proibidão e música gospel para gerar letras novas com uma Cadeia de Markov em Python."
 ---
 Um pouco de humor nerd:
 
-Eu estava estudando **Cadeias de Markov** e como usar Python para trabalhar com elas, e acabei fazendo um gerador de letras de música. 
+Eu estava estudando **Cadeias de Markov** e como usar Python para trabalhar com elas.
 
-Aí, eu resolvi misturar um **funk proibidão com música gospel**.
+Acabei fazendo um gerador de letras de música. 
 
-Essa foi uma das letras geradas:
+Naturalmente, eu resolvi misturar um **funk proibidão com música gospel** pra ver o que sai.
 
->Esse tesão  
->Gaiola dos 11, Jd  
->Vida, você entrou na minha alma espera em Deus  
->Ai meu Deus é o terror com as droga ele parou  
->Olha você ta se enganando  
->Quando vai chegar  
->
->Nunca deixe alguém dizer  
->é o cotidiano  
->as vítimas  
->Muito lenga lenga, blá blá blá blá e tititi  
->E agora escute bem vou lhe dizer  
->Resumindo meu medo  
->
->Esse tesão  
->Gaiola dos 11, Jd  
->Vida, você entrou na minha alma espera em Deus  
->Ai meu Deus é o terror com as droga ele parou  
->Olha você ta se enganando  
->Quando vai chegar  
->
->Nunca deixe alguém dizer  
->é o cotidiano  
->as vítimas  
->Muito lenga lenga, blá blá blá blá e tititi  
->E agora escute bem vou lhe dizer  
->Resumindo meu medo  
->
+(*Obs: Se você não acha isso tão engraçado quanto eu, provavelmente você é uma pessoa normal e eu tenho um senso de humor bem esquisito.*)
 
-Em breve eu detalho como eu fiz - basicamente foi um scraper que baixou as letras do Vagalume, e usei uma biblioteca chamada pymarkovchain para gerar as letras. 
+Essa foi uma das letras:
 
-Código:
+> Os humilhados serão exaltados  
+> Sou O Melhor Dj Que Tu Vai Conhece  
+> E liberdade de estar com você beijar você  
+> Mas entreguei tudo isso  
+> E que te amo, amo mais ainda  
+>   
+> É vida de quem perdeu não foi em vão  
+> Derramou azeite, vinho em suas mãos  
+> Tá colocando a mão pro alto  
+> Quem não gosta não conhece,  
+> Um bom malandro age na tranquilidade  
+> E o que é dor no seu olhar  
+>   
+> Os humilhados serão exaltados  
+> Sou O Melhor Dj Que Tu Vai Conhece  
+> E liberdade de estar com você beijar você  
+> Mas entreguei tudo isso  
+> E que te amo, amo mais ainda  
+>   
+> É vida de quem perdeu não foi em vão  
+> Derramou azeite, vinho em suas mãos  
+> Tá colocando a mão pro alto  
+> Quem não gosta não conhece,  
+> Um bom malandro age na tranquilidade  
+> E o que é dor no seu olhar  
+
+Não é muito coerente (não consegui fazer rimar!), mas foi ótimo para rir e aprender Cadeias de Markov.
+
+Como eu fiz: criei um scraper que baixou as letras do Vagalume, depois usei uma cadeia simples para gerar as letras. 
+
+Aí descobri que tinha uma biblioteca que faz 10x melhor. (*óbvio!*)
+
+## O que é uma Cadeia de Markov?
+
+Uma **Cadeia de Markov** é um modelo que **calcula uma sequência de eventos.**
+
+Essa sequência é calculada de forma que **a probabilidade de ocorrer um evento depende do anterior**.
+
+Esse modelo é genial para trabalhar com textos: ele gera frases escolhendo palavras baseadas nas anteriores, calculando quais palavras têm maior probabilidade de as suceder.  
+
+![Cadeia de Markov Simples](/../img/cadeia-de-markov.png) 
+
+> Cada evento calcula sua probabilidade em separado 
+
+## Como criar uma Cadeia de Markov em Python
+
+Agora, vamos ao nosso gerador de letras de música. 
+
+A primeira parte do processo envolve ter **muitas letras** em um arquivo de texto, para treinar nossa cadeia com as probabilidades envolvendo sequências de palavras. 
+
+Para isso, eu fiz um scraper do site Vagalume, que baixa todas as letras de um artista em um arquivo de texto. Logo escrevo detalhando como fazer isso. Enquanto isso, você pode olhar o [código final](#).
+
+A segunda parte do processo é escrever a Cadeia de Markov em si:
+
+Começamos gerando uma palavra aleatória.
+
+Depois disso, todas as outras são geradas baseado na probabilidade de suceder a anterior.
+
+Vamos começar? 
+
+    import random
+    import os
+
+    #Abrindo e lendo um arquivo de texto com as letras
+    lyrics = open("letras.txt","r")
+    lyrics = corpusLetras.read()
+
+    ## Criando uma lista de palavras baseado no texto. 
+    ## Aqui nós: substituímos as quebras de linha por espaços
+    ## separamos o string pelos espaços, 
+    ## usamos um filtro para remover valores vazios da lista
+ 
+    wordList = lyrics.replace('\n', ' ') 
+    wordList = wordList.split(' ') 
+    wordList = list(filter(None, wordList))
+
+Já temos uma lista tratada com todas as palavras no nosso arquivo de texto. O próximo passo é transformar ela em um dicionário de probabilidades:
+
+    index = 1
+    chain = {} ## nosso dicionário
+    wordCount = 5 ## o número de palavras geradas
+
+    ## um loop que busca todas as palavras na nossa lista, e coloca no dicionário uma nova chave com cada palavra, e seu valores, todas as palavras que as sucedem 
+    for word in wordList[index:]:
+        key = wordList[index - 1]
+        if key in chain:
+            chain[key].append(word)
+        else:
+            chain[key] = [word]
+        index += 1
+
+Agora, iniciamos a gerar as letras:
+
+    #Uma palavra inicial aleatória
+    notCapitalized = True
+    
+    while notCapitalized:
+        firstWord = random.choice(list(chain.keys()))
+        if firstWord[0].isupper():
+            notCapitalized = False
+
+Fazemos um Loop que vai escolher uma palavra aleatória baseada nos sucessores:
+
+    iterations = 0
+    while len(line.split(' ')) < wordCount:
+        capitalized = True
+        while capitalized:
+            iterations += 1
+            nextWord = random.choice(chain[firstWord])
+            if nextWord[0].islower():
+                capitalized = False
+            if iterations > 15:
+                capitalized = False
+                iterations = 0
+        firstWord = nextWord
+        line += ' ' + nextWord
+
+Amarrando tudo em uma função:
+
+    def generateLine():
+        wordCount = 5 ## o número de palavras geradas
+        notCapitalized = True
+
+        while notCapitalized:
+            firstWord = random.choice(list(chain.keys()))
+            if firstWord[0].isupper():
+                notCapitalized = False
+
+        line = firstWord
+        iterations = 0
+
+        while len(line.split(' ')) < wordCount:
+            capitalized = True
+            while capitalized:
+                iterations += 1
+                nextWord = random.choice(chain[firstWord])
+                if nextWord[0].islower():
+                    capitalized = False
+                if iterations > 15:
+                    capitalized = False
+                    iterations = 0
+            firstWord = nextWord
+            line += ' ' + nextWord
+        return line
+
+Agora, nós escrevemos um Loop que gera estrofes baseado nessas linhas:
+
+    index = 0
+    verseList = list()
+
+    while index < 12:
+        verseList.append(generateLine())
+        if index == 5:
+            firstVerse = verseList
+            verseList = list()
+            print("\n")
+        if index == 11:
+            for y in firstVerse:
+                print(y)
+            print("\n")
+            for y in verseList:
+                print(y)
+            print("\n")        
+            for y in firstVerse:
+                print(y)
+            print("\n")
+            for y in verseList:
+                print(y)
+        index += 1
+
+## Código:
+
+No fim, eu acabei encontrando uma biblioteca chamada pymarkovchain, que deixou as letras mais coerentes. 
+
+Se você está interessado apenas em usar cadeias de markov para aprender, é muito mais produtivo fazer do começo, mas se você quer criar algo mais coerente, vale dar uma olhada nas bibliotecas já existentes. 
+
+### Cadeia de Markov:
+
+    import random
+    import os
+
+    #Abrindo e lendo um arquivo de texto com as letras
+    lyrics = open("letras.txt","r")
+    lyrics = corpusLetras.read()
+
+    ## Criando uma lista de palavras baseado no texto. 
+    ## Aqui nós: substituímos as quebras de linha por espaços
+    ## separamos o string pelos espaços, 
+    ## usamos um filtro para remover valores vazios da lista
+
+    wordList = lyrics.replace('\n', ' ') 
+    wordList = wordList.split(' ') 
+    wordList = list(filter(None, wordList))
+
+    index = 1
+    chain = {} ## nosso dicionário
+    wordCount = 5 ## o número de palavras geradas
+
+    ## um loop que busca todas as palavras na nossa lista, e coloca no dicionário uma nova chave com cada palavra, e seu valores, todas as palavras que as sucedem 
+    for word in wordList[index:]:
+        key = wordList[index - 1]
+        if key in chain:
+            chain[key].append(word)
+        else:
+            chain[key] = [word]
+        index += 1
+
+    ## nossa função que encontra as palavras seguintes aleatoriamente, baseado no dicionário e nas anteriores 
+    def generateLine():
+        wordCount = 5 ## o número de palavras geradas
+        notCapitalized = True
+
+        while notCapitalized:
+            firstWord = random.choice(list(chain.keys()))
+            if firstWord[0].isupper():
+                notCapitalized = False
+
+        line = firstWord
+        iterations = 0
+
+        while len(line.split(' ')) < wordCount:
+            capitalized = True
+            while capitalized:
+                iterations += 1
+                nextWord = random.choice(chain[firstWord])
+                if nextWord[0].islower():
+                    capitalized = False
+                if iterations > 15:
+                    capitalized = False
+                    iterations = 0
+            firstWord = nextWord
+            line += ' ' + nextWord
+        return line
+
+
+    ## a função que gera estrofes:
+    index = 0
+    verseList = list()
+
+    while index < 12:
+        verseList.append(generateLine())
+        if index == 5:
+            firstVerse = verseList
+            verseList = list()
+            print("\n")
+        if index == 11:
+            for y in firstVerse:
+                print(y)
+            print("\n")
+            for y in verseList:
+                print(y)
+            print("\n")        
+            for y in firstVerse:
+                print(y)
+            print("\n")
+            for y in verseList:
+                print(y)
+        index += 1
+
+### BeautifulSoup como Scraper + pymarkovchain 
 
     import os
     from bs4 import BeautifulSoup
@@ -134,30 +370,32 @@ Código:
                 print(y)
         i = i + 1
 
-Mais uma letra:
+Mais uma letra de bônus pra quem chegou até aqui:
 
-> Os humilhados serão exaltados  
-> O Melhor Dj Que Tu Vai Conhece  
-> E liberdade de estar com voçê beijar voçê  
-> Mas entreguei tudo isso  
-> E que te amo, amo mais ainda  
->   
-> É vida de quem perdeu não foi em vão  
-> Derramou azeite, vinho em suas mãos  
-> Tá colocando a mão pro alto  
-> Quem não gosta não conhece,  
-> Um bom malandro age na tranquilidade  
-> E o que é dor no seu olhar  
->   
-> Os humilhados serão exaltados  
-> O Melhor Dj Que Tu Vai Conhece  
-> E liberdade de estar com voçê beijar voçê  
-> Mas entreguei tudo isso  
-> E que te amo, amo mais ainda  
->   
-> É vida de quem perdeu não foi em vão  
-> Derramou azeite, vinho em suas mãos  
-> Tá colocando a mão pro alto  
-> Quem não gosta não conhece,  
-> Um bom malandro age na tranquilidade  
-> E o que é dor no seu olhar  
+>Esse tesão  
+>Gaiola dos 11, Jd  
+>Vida, você entrou na minha alma espera em Deus  
+>Ai meu Deus é o terror com as droga ele parou  
+>Olha você ta se enganando  
+>Quando vai chegar  
+>
+>Nunca deixe alguém dizer  
+>é o cotidiano  
+>as vítimas  
+>Muito lenga lenga, blá blá blá blá e tititi  
+>E agora escute bem vou lhe dizer  
+>Resumindo meu medo  
+>
+>Esse tesão  
+>Gaiola dos 11, Jd  
+>Vida, você entrou na minha alma espera em Deus  
+>Ai meu Deus é o terror com as droga ele parou  
+>Olha você ta se enganando  
+>Quando vai chegar  
+>
+>Nunca deixe alguém dizer  
+>é o cotidiano  
+>as vítimas  
+>Muito lenga lenga, blá blá blá blá e tititi  
+>E agora escute bem vou lhe dizer  
+>Resumindo meu medo  
