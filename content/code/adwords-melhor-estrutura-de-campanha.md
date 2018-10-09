@@ -1,10 +1,15 @@
 ---
-title: "Qual a melhor Estrutura De Campanha do Google Ads (Adwords)"
+title: "Conheça a Alpha-Beta: a melhor Estrutura De Campanha do Adwords"
 date: 2018-08-23T11:25:41+02:00
 draft: false
-description: "A melhor estrutura de campanha para Adwords - Alpha-Beta e SKAGs. Quando usar correspondência Ampla, de Frase e Exata"
+description: "Como Diminuir o CPC e aumentar conversões com a estrutura de campanha chamada Alpha-Beta, e a técnica SKAG. Veja como usar correspondência Ampla, de Frase e Exata"
+SEOTitle: "O melhor tipo de campanha do Adwords: Alpha-Beta"
+metaDescription: "Diminua o CPC e aumente conversões com a estrutura de campanha chamada Alpha-Beta, e a técnica SKAG. Veja como usar correspondência Ampla, de Frase e Exata."
 toc: true
 ---
+
+
+
 
 Se você anuncia no Google Ads (falecido Google Adwords), precisa se atentar para a mais poderosa - *e básica* - técnica para **diminuir seu custo, aumentar conversões, CTR e melhorar todas as métricas**.
 
