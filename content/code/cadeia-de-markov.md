@@ -84,7 +84,7 @@ Vamos começar?
 
     #Abrindo e lendo um arquivo de texto com as letras
     lyrics = open("letras.txt","r")
-    lyrics = corpusLetras.read()
+    lyrics = lyrics.read()
 
     ## Criando uma lista de palavras baseado no texto. 
     ## Aqui nós: substituímos as quebras de linha por espaços
@@ -197,12 +197,13 @@ Se você está interessado apenas em usar cadeias de markov para aprender, é mu
 
 ### Cadeia de Markov:
 
+    ## Esse método é baseado no código de Mehrab Jamee 
     import random
     import os
 
     #Abrindo e lendo um arquivo de texto com as letras
     lyrics = open("letras.txt","r")
-    lyrics = corpusLetras.read()
+    lyrics = lyrics.read()
 
     ## Criando uma lista de palavras baseado no texto. 
     ## Aqui nós: substituímos as quebras de linha por espaços
