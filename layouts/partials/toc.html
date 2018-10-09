@@ -1,0 +1,69 @@
+ <!-- ignore empty links with + -->
+ {{ $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content }}
+ <!-- at least one header to link to -->
+ {{ $has_headers := ge (len $headers) 1 }}
+ <!-- a post can explicitly disable Table of Contents with toc: false -->
+ {{ $show_toc := (eq $.Params.toc true) }}
+ {{ if and $has_headers $show_toc }}
+ <div id="#toc" class="toc">
+    <!-- TOC header -->
+    <h2 style="margin-bottom:0px !important;"><i>Acesso rápido</i></h2>
+    <ul>
+        <li><a href="#title-header">Início</a></li>
+     {{ range $headers }}
+         {{ $header := . }}
+         {{ range first 1 (findRE "<h[1-6]" $header 1) }}
+             {{ range findRE "[1-6]" . 1 }}
+                 {{ $next_heading := (int .) }}
+                 <!-- generate li array of the proper depth -->
+                 {{ range seq $next_heading }}
+                 {{end}}
+                 {{ $base := ($.Page.File.LogicalName) }}
+                 {{ $anchorId := ($header | plainify | htmlEscape | urlize) }}
+                 {{ $href := delimit (slice $base $anchorId) "#" | string }}
+                 
+                     <li class="toc-h{{ . }}">
+                            <a href="{{ relref $.Page $href }}">
+                                {{ $header | plainify | htmlEscape }}
+                            </a>
+                    </li>
+                 <!-- close list -->
+                 {{ range seq $next_heading }}
+                 {{end}}
+                
+             {{end}}
+         {{end}}
+     {{ end }}
+    </ul>
+ </div>
+ <hr>
+ {{ end }}
+ <style>
+
+
+        .toc {
+            position: blue;
+            top: blue;
+            right: blue;
+            width: blue;
+            height: blue;
+            overflow:blue;
+            font-size:blue;
+              }
+
+                    
+            @media (min-width: 48em) {
+                .toc {
+                    position: fixed;
+                    top: 50px;
+                    right: 25px;
+                    width: 280px;
+                    height:100%;
+                    overflow:scroll;
+                    font-size:90%;
+                    }
+        
+            }
+
+
+ </style>

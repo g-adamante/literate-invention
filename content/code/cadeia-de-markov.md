@@ -6,6 +6,7 @@ description: "Usando Python e alguma criativdade, você consegue gerar letras ba
 H1: "Aprenda a usar Cadeias de Markov criando um gerador de letras que mistura Gospel e Funk Proibidão"
 SEOTitle: "Fazendo Cadeia de Markov em Python gerar letras de música"
 metaDescription: "Como eu misturei Funk proibidão e música gospel para gerar letras novas com uma Cadeia de Markov em Python."
+toc: true
 ---
 Um pouco de humor nerd:
 
@@ -189,13 +190,13 @@ Agora, nós escrevemos um Loop que gera estrofes baseado nessas linhas:
                 print(y)
         index += 1
 
-## Código:
+## Código
 
 No fim, eu acabei encontrando uma biblioteca chamada pymarkovchain, que deixou as letras mais coerentes. 
 
 Se você está interessado apenas em usar cadeias de markov para aprender, é muito mais produtivo fazer do começo, mas se você quer criar algo mais coerente, vale dar uma olhada nas bibliotecas já existentes. 
 
-### Cadeia de Markov:
+### Cadeia de Markov
 
     ## Esse método é baseado no código de Mehrab Jamee 
     import random
@@ -279,7 +280,7 @@ Se você está interessado apenas em usar cadeias de markov para aprender, é mu
                 print(y)
         index += 1
 
-### BeautifulSoup como Scraper + pymarkovchain 
+### BeautifulSoup como Scraper e pymarkovchain 
 
     import os
     from bs4 import BeautifulSoup

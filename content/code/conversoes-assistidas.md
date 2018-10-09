@@ -6,6 +6,7 @@ description: "Descubra o que é o Relatório de Conversões Assistidas do Google
 H1: "Conversões Assistidas do Analytics: descubra o que são e as use como um Profissional"
 SEOTitle: "Conversões Assistidas do Analytics (aprenda a usar feito PRO)"
 metaDescription: "O que é o Relatório de Conversões Assistidas do Google Analytics? Aprenda a o usar como um profissonal para descobrir quais seus melhores conteúdos."
+toc: true
 ---
 
 Se você tem um website que está registrando conversões de qualquer tipo através do Google Analytics, você **TEM** que conhecer o Relatório de **Conversões Assistidas**:
@@ -47,7 +48,7 @@ Voltando ao conceito: Conversão Assisitida é qualquer ponto de interação com
 {{< subscribe >}}
 
 
-# Como usar o Relatório de Conversões Assistidas como um Profissional:
+# Como usar o Relatório de Conversões Assistidas como um Profissional
 
 Você pode fazer uso deste relatório para descobrir quais são os conteúdos orgânicos essenciais para seu funil de vendas, por exemplo.
 
@@ -75,7 +76,7 @@ Aqui estão os elementos mais importantes do Relatório:
 
 Por padrão, **todas as conversões vêm selecionadas**. Portanto preste atenção, se você deseja ver apenas uma conversão de Lead, ou de venda, tenha certeza que só ela está selecionada.
 
-### O Tempo de "Lookback"
+### O Tempo de Lookback
 
 ![Tempo de Lookback](/../img/conversoes-assistidas-lookback-window.png) 
 

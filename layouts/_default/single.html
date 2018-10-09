@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="post">
-    <header>
+    <header id="title-header">
 
         {{ if .Params.H1 }}
         <h1>{{ .Params.H1 }}</h1>
@@ -25,6 +25,8 @@
         </h2>
     </header>
     <section id="post-body">
+        {{ partial "toc.html" . }}
+
         {{ .Content }}
     </section>
 </article>

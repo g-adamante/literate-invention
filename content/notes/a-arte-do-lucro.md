@@ -7,6 +7,7 @@ Embora fácil de ler, **ele é denso, com ideias complexas**, que precisam ser r
 H1: "A Arte do Lucro - Resumo do Livro (+23 tipos de Lucro geniais)"
 SEOTitle: "A Arte do Lucro - Resumo do Livro (+23 tipos de Lucro geniais)"
 metaDescription: "Resumo do livro a Arte do Lucro e dos 23 modelos de negócio lucrativo apresentados. O livro ensina por meio de parábolas, contando histórias de empresas que aplicaram o modelo em questão para gerar lucro"
+toc: true
 ---
 
 {{<chart-script>}}
@@ -27,18 +28,10 @@ Descreve **23 modelos de negócio lucrativo** que o protagonista, Zhao, identifi
 Embora fácil de ler, **ele é denso, com ideias complexas**, que precisam ser revisitadas várias vezes para as absorver de verdade.
 
 Eu gostei dos modelos que vou fazer notas detalhadas sobre cada um deles, junto com o *dever de casa* que o Zhao passa.
-
----
-- [Lucro de Solução do Cliente](#lucro-de-solução-do-cliente-costumer-solution-profit)
-- [Lucro em Pirâmide](#lucro-em-pirâmide-pyramid-profit)
-- [Lucro Multi-Componente](#lucro-multi-componente-multi-component-profit)
-- [Lucro com Quadro de Distribuição](#lucro-com-quadro-de-distribuição-switchboard-profit)
-
----
  
 >**PS:** Esse artigo vai ser atualizado conforme eu tomo as notas para cada modelo
 
-## Lucro de Solução do Cliente - *Costumer Solution Profit*
+## Lucro de Solução do Cliente: *Costumer Solution Profit*
 
 {{<chart data="[0, -30, -60, -70, -60, -30, 20, 80, 120, 145, 155, 155]" title="Costumer Solution Profit" height="400px" id="costumer-solution-profit-0">}}
 
@@ -66,7 +59,7 @@ E ao mesmo tempo, as três pessoas que passaram tanto tempo pensando em como ent
 Empresas que utilizam esse modelo com maestria: **[Palantir(?)](https://pt.wikipedia.org/wiki/Palantir_Technologies)**. Me mande um @ no Twitter se pensar em mais. 
 
 
-## Lucro em Pirâmide - *Pyramid Profit*
+## Lucro em Pirâmide: *Pyramid Profit*
 
 {{<pyramid-profit id="1" number="3">}}
 
@@ -108,7 +101,7 @@ Ao fim, você acaba com um sistema cuidadosamente planejado para se defender de 
 
 Empresas que utilizam esse modelo com maestria: **Apple**, montadoras de carros. 
 
-## Lucro Multi-Componente - *Multi-Component Profit*
+## Lucro Multi-Componente: *Multi-Component Profit*
 
 {{<multi-component-profit id="1">}}
 
@@ -136,7 +129,7 @@ Em uma máquina de venda, deve estar cerca de R$3,00 - R$0,90 por 100ml.
 
 A diferença entre o lucro de multi-componente e de pirâmide é que **o consumidor compra o mesmo produto em todas as faixas de preço** - o mesmo produto, vários negócios diferentes.
 
-## Lucro com Quadro de Distribuição - *Switchboard Profit*
+## Lucro com Quadro de Distribuição: *Switchboard Profit*
 
 {{<switchboard-profit id="1">}}
 
