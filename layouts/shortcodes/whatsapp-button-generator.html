@@ -2,31 +2,30 @@
 
   <legend>
     <span class="number">1</span> 
-    Número de Whatsapp
+    Whatsapp number
     <div class="tooltip question" onclick="">?
-      <span class="tooltiptext">Coloque o número com o código de país (55 para o Brasil) e código de área. <br>Exemplo: +55(41)99526-6655
+      <span class="tooltiptext">Put the number with your country code (you  don't need to use all the spaces)  <br>Eg: <br>+55 41995266655
       </span>
     </div>
   </legend>
 
-  <input type="tel" name="phone" id="phone" placeholder="+XX(XX)XXXXX-XXXX" required="required" title="Número de Whatsapp">
+  <input type="tel" name="phone" id="phone" placeholder="+XX XXXXXXX-XXXX" required="required" title="Whatsapp Number">
 
 
   <legend>
     <span class="number">2</span>
-    Mensagem
-    <div class="tooltip question" onclick="">?<span class="tooltiptext">A mensagem que
-        você quer que seja escrita automaticamente (deixe em branco para nada)</span>  
+    Message
+    <div class="tooltip question" onclick="">?<span class="tooltiptext">The message you want to be automatically written  (leave unfilled for nothing)</span>  
     </div>
   </legend>
 
 <textarea name="mensagem-botao" style="resize:none;" id="mensagem-botao"></textarea>
 
 <legend>
-  <span class="number">3</span>Animação
+  <span class="number">3</span>Animation
   <div class="tooltip question" onclick="">?
     <span class="tooltiptext">
-    Você quer que o botão seja animado?</span>
+    Do you want the button to be animated?</span>
 </div>
 
 
@@ -39,12 +38,12 @@
 
 
 <button class="hvr-bounce-whatsapp-button-in" style="margin-top:10px;" 
-onclick="generateCode();">Gerar código!</button>
+onclick="generateCode();">Generate code!</button>
 
-<legend><span class="number">4</span>Código:</legend>
+<legend><span class="number">4</span>Code:</legend>
 <textarea name="codigo-botao" readonly style="resize:none;" id="codigo-botao"></textarea>
 
-<button class="hvr-bounce-whatsapp-button-in" onclick="copy()">Copiar código gerado</button>
+<button class="hvr-bounce-whatsapp-button-in" onclick="copy()">Copy code</button>
 </div>
 
 
@@ -305,7 +304,7 @@ onclick="generateCode();">Gerar código!</button>
   }
 
   function phone_number_mask() {
-    var myMask = "+__(__)_____-____";
+    var myMask = "+__ __________________";
     var myCaja = document.getElementById("phone");
     var myText = "";
     var myNumbers = [];
@@ -350,6 +349,8 @@ onclick="generateCode();">Gerar código!</button>
     whatsappNum = whatsappNum.replace('-', '')
     whatsappNum = whatsappNum.replace('+', '')
     whatsappNum = whatsappNum.replace(/_/g, '')
+    whatsappNum = whatsappNum.replace(' ', '')
+
 
     var whatsappbutton = document.getElementById('whatsapp-button-div');
 
@@ -386,6 +387,7 @@ onclick="generateCode();">Gerar código!</button>
     textArea.value = newWhatsappButton.outerHTML + " " + document.getElementById('whatsapp-button-style').outerHTML
     
   };
+
 
   function copy() {
     let textarea = document.getElementById("codigo-botao");
