@@ -3,7 +3,7 @@
   <legend>
     <span class="number">1</span> 
     Número de Whatsapp
-    <div class="tooltip question">?
+    <div class="tooltip question" onclick="">?
       <span class="tooltiptext">Coloque o número com o código de país (55 para o Brasil) e código de área. <br>Exemplo: +55(41)99526-6655
       </span>
     </div>
@@ -15,7 +15,7 @@
   <legend>
     <span class="number">2</span>
     Mensagem
-    <div class="tooltip question">?<span class="tooltiptext">A mensagem que
+    <div class="tooltip question" onclick="">?<span class="tooltiptext">A mensagem que
         você quer que seja escrita automaticamente (deixe em branco para nada)</span>  
     </div>
   </legend>
@@ -24,7 +24,7 @@
 
 <legend>
   <span class="number">3</span>Animação
-  <div class="tooltip question">?
+  <div class="tooltip question" onclick="">?
     <span class="tooltiptext">
     Você quer que o botão seja animado?</span>
 </div>
@@ -208,7 +208,7 @@ onclick="generateCode();">Gerar código!</button>
   }
 
   /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
+  .tooltip:hover, .tooltiptext {
     visibility: visible;
     opacity: 1;
   }
