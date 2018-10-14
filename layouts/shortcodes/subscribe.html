@@ -1,20 +1,83 @@
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
+	#mc_embed_signup{clear:left;width:80%;}
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+      margin-bottom: 30px;
+    }
+
+  .button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+    
+  }
+
+/* Icon Fade */
+.hvr-icon-fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-icon-fade .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color;
+    transition-property: color;
+  }
+  .hvr-icon-fade:hover .hvr-icon, .hvr-icon-fade:focus .hvr-icon, .hvr-icon-fade:active .hvr-icon {
+    color: rgb(0, 255, 140);
+  }</style>
 <div id="mc_embed_signup">
+    <hr>
 <form action="https://adamante.us18.list-manage.com/subscribe/post?u=e15969627c6bfe982709aa108&amp;id=606c6277e6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Seja avisado quando houver mais conteúdo como esse:</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email" required>
+	<label for="mce-EMAIL"><b>Seja avisado quando houver mais conteúdo como esse:</b></label><br><br>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Seu melhor e-mail" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e15969627c6bfe982709aa108_606c6277e6" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Se inscreva" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><button type="submit" value="Se inscreva" name="subscribe" id="mc-embedded-subscribe" class="button hvr-icon-fade">
+            <span class="hvr-icon">Se inscreva <i class="fa fa-diamond "></i></span>
+          </a>
+        </button></div>
     </div>
 </form>
+<hr>
 </div>
 
 <!--End mc_embed_signup-->
