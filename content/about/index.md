@@ -7,17 +7,16 @@ toc: false
 
 ## Quem sou eu?
 
-Olá. Meu nome é Gabriel. Não preciso te dizer que é muito desconfortável escrever uma seção "sobre o autor" de um site, já que todos se sentem estranhos ao fazer isso. E falar de si mesmo em terceira pessoa vem sempre associado a um sentimento de egomania arrogante (por isso estou escrevendo em primeira).
-
-Enfim, já que estou aqui, vou me apresentar.
+Olá. Meu nome é Gabriel. 
 
 Eu sou um [escritor](http://recortelirico.com.br/2016/07/autor-curitibano-se-inspira-no-realismo-magico-em-seu-primeiro-livro) 
-(Eu escrevi um livro de Contos, que você pode encontrar [aqui](https://www.ciadoslivros.com.br/volta-as-aulas/historias-de-fim-do-mundo-724403-p588160)). 
-Eu também sou um Freelancer de Marketing Digital, e eu costumava trabalhar para a queridinha Fintech  Curitibana [Contabilizei](http://contabilizei.com.br/), que foi eleita uma das empresas mais inovadoras do mundo pela revista Fast Company.
+(Eu escrevi um livro de Contos, que você pode encontrar [aqui](https://www.ciadoslivros.com.br/volta-as-aulas/historias-de-fim-do-mundo-724403-p588160)). Sou um [especialista em Marketing Digital](/me-contrate), e eu costumava trabalhar para a queridinha Fintech Curitibana [Contabilizei](http://contabilizei.com.br/).
+
+Eu também estou constrangido em ficar falando sobre mim mesmo desta maneira 😳
 
 Eu sai da empresa recentemente e me mudei para Europa para viver e trabalhar.
 
-Alguns dos meus assuntos de interesse:
+Alguns dos assunto que me interessam:
 
 - Alta Literatura (Especialmente Latino-Americana)
 - Filosofia
@@ -48,7 +47,13 @@ Neste exato momento, os meus são os seguintes:
 
 #### Liberdade: viver livremente; tomar minhas próprias decisões e escolher meu comportamento, ou ajudar outros a fazerem o mesmo
 
-O sentimento de Liberade é muito importante para mim e me faz muito feliz e produtivo. Desde criança, eu saia correndo pela praia (enlouquecendo minha mãe) pois era a coisa certa a se fazer. Eu não precisava de um motivo. Eu só queria ser livre. 
+O sentimento de Liberade é muito importante para mim e me faz muito feliz e produtivo. 
+
+Me contam que quando criança, quase todos os anos família resolvia fazer aquela *clássica* reunião de fim de ano no litoral - e você sabe como são as praias do nosso querido Brasil em dezembro: cheias. 
+
+Quase não tem espaço para levar o guarda sol, as cadeiras de praia, a caixa de isopor com Skol quente, e o frango com farofa. 
+
+Então, assim que todos estivessem sentados, torrando tranquilamente no sol (como se fossem dormir aquela noite, com a queimadura de segundo grau que se desenvolvia), eu saia correndo pela praia, em direção ao burburinho de estranhos mais distante, com uma velocidade impressionante para uma criança de 4 anos de idade, enlouquecendo minha mãe e causando uma comoção entre os adultos que só queriam tomar sua Skol quente e cultivar a barriguinha de chopp, mas que tiveram que correr atrás de um pirralho sem vergonha. Acho que eu não precisava de um motivo pra isso. Eu só queria ser livre. 
 
 Já pensei muito sobre Liberade e o que caracteriza ela, explorando várias definições (políticas, filosóficas, etc.), mas eu nunca havia percebido em que grau isso faz parte de quem eu sou.
 
@@ -87,8 +92,6 @@ Eu amo criar coisas novas. Eu amo construir coisas novas. Eu sou feliz enquanto 
 
 **Esses estão no meu carácter, e gosto de pensar que sou assim:**
 
-- Humildade: ser humilde ou modesto - deixar com que os meus resultados falem por si mesmos
-- Aventura: ser aventureiro - procurar, criar, explorar coisas novas e estimulantes
 - Curiosidade: ser curioso, cabeça-aberta, interessado; explorar e descobrir
 - Autenticidade: ser autêntico, genuino e real
 - Gratidão: ser grato e apreciar todas as coisas na minha vida
@@ -99,6 +102,8 @@ Eu amo criar coisas novas. Eu amo construir coisas novas. Eu sou feliz enquanto 
 
 - Coragem: ser corajoso; persistir em frente ao medo, ameaça ou dificuldade
 - Êxtase: procurar, criar e engajar em atividades que gerem êxtase, são estimulantes e animadoras
+- Aventura: ser aventureiro - procurar, criar, explorar coisas novas e estimulantes
+
 
 **Isso é meu defeito, e eu preciso melhorar:**
 

@@ -4,10 +4,10 @@ date: 2018-04-07T23:29:28+02:00
 draft: false
 ---
 
-Hello! Welcome to my website. Se você falar português, [seja bem vindo](/ "seja bem vindo.")
+Hello! Welcome to my website. Se você falar português, [seja bem vindo.](/ "seja bem vindo")
 
-I’m Gabriel Adamante. I write about a lot of things, and also fiction (witch I really enjoy). I wrote a short stories book called Tales the World Ending. 
+I’m Gabriel Adamante. I write about a [lot of things](#) (fiction, too). I wrote a short story book called [Tales the World Ending](#). 
 
-Right now, I’m living in Spain, and working on a translation of Marcus Aurelius Meditations to portuguese. 
+[Now](#), I’m living in Spain, working on a translation of Marcus Aurelius Meditations to Portuguese, doing some consulting work ([you should hire me!](#)), and getting ready to open a café called *Tropicália*. 
 
-You’ll find here some book notes, what I’m doing right now,my Short Stories (in portuguese, I’m afraid :/ ), and some snippets of code or marketing techniques I may have put to use.
+Here, you'll find some [book notes](#), my [short stories](#) (mostly in Portuguese, I’m afraid), and some [snippets of code or marketing techniques](#) I may have put to use.
