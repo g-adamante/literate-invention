@@ -15,6 +15,13 @@ toc: false
 
 É muito simples: você só precisa colar o código em seu site, em algum lugar que te permita colocar HTML/CSS personalizado.
 
+O ideal é incorporar o CSS com o já existente na sua página, mas não é essencial.
+
+
+## Como funciona?
+
+É só um CSS simples usando media queries para exibir dois links diferentes: um que abre o WhatsApp web, em telas maiores, e um que usa a API do WhatsApp, para celulares.
+
 ### Wordpress:
 
 Eu vou fazer um plugin para colocar automaticamente muito em breve (creio que em uma ou duas semanas.)

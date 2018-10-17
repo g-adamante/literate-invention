@@ -15,6 +15,12 @@ toc: false
 
 Just paste the code somewhere you can put custom HTML/CSS.
 
+It would be best to incorporate the CSS with other custom styles, but it's not mandatory. 
+
+## How does it work?
+
+It's just simple CSS using media queries to display two different links: 1 for WhatsApp Web, for larger screens, and other for the WhatsApp API, for smaller screens.
+
 ### Wordpress:
 
 I'll make a plugin in a couple of weeks.
