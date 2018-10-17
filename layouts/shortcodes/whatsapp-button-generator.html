@@ -355,12 +355,12 @@ onclick="generateCode();">Generate code!</button>
     var whatsappbutton = document.getElementById('whatsapp-button-div');
 
     whatsappbutton.children[0].href = whatsappbutton.children[0].href.slice(0,whatsappbutton.children[0].href.search('text=')) + message
-    whatsappbutton.children[1].href = whatsappbutton.children[1].href.slice(0,whatsappbutton.children[0].href.search('text=')) + message
+    whatsappbutton.children[1].href = whatsappbutton.children[1].href.slice(0,whatsappbutton.children[1].href.search('text=')) + message
 
     var numbernow = whatsappbutton.children[0].href.slice(whatsappbutton.children[0].href.search('phone')+6,whatsappbutton.children[0].href.search('text=')-1)
 
     whatsappbutton.children[0].href = whatsappbutton.children[0].href.slice(0,whatsappbutton.children[0].href.search('text=')) + message
-    whatsappbutton.children[1].href = whatsappbutton.children[1].href.slice(0,whatsappbutton.children[0].href.search('text=')) + message
+    whatsappbutton.children[1].href = whatsappbutton.children[1].href.slice(0,whatsappbutton.children[1].href.search('text=')) + message
 
 
     whatsappbutton.children[0].href = whatsappbutton.children[0].href.replace(numbernow, whatsappNum) 
