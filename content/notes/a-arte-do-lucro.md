@@ -4,8 +4,8 @@ date: 2018-09-04T17:47:02+02:00
 draft: false
 description: "O livro descreve **23 modelos de negócio lucrativo** que o protagonista, Zhao, identificou. Ensina por meio de parábolas, contando histórias de empresas que aplicaram o modelo em questão para gerar lucro.
 Embora fácil de ler, **ele é denso, com ideias complexas**, que precisam ser revisitadas várias vezes para as absorver de verdade."
-H1: "A Arte do Lucro - Resumo do Livro (+23 tipos de Lucro geniais)"
-SEOTitle: "A Arte do Lucro - Resumo do Livro (+23 tipos de Lucro geniais)"
+H1: "A Arte do Lucro - Resumo do Livro e dos 23 modelos de lucro"
+SEOTitle: "A Arte do Lucro - Resumo do Livro e dos 23 modelos de lucro"
 metaDescription: "Resumo do livro a Arte do Lucro e dos 23 modelos de negócio lucrativo apresentados. O livro ensina por meio de parábolas, contando histórias de empresas que aplicaram o modelo em questão para gerar lucro"
 toc: true
 ---
