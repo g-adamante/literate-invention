@@ -1,0 +1,153 @@
+.do h2{
+    font-weight: bolder;
+    font-size: 350%;
+}
+.do {
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:5%;
+    padding-right:5%;
+    /*background-color:rgba(128, 128, 128, 0.226);*/
+}
+
+.list-text {
+	font-size:140%;
+	color:#212529;
+}
+
+.badge-abilities {
+	font-size:95%;
+}
+
+.portfolio {
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:6%;
+}
+.portfolio h2{
+    font-weight: bolder;
+    font-size: 350%;
+}
+
+.header-text {
+    font-size:250%;
+    font-weight: 350;
+    color: white;
+}
+
+.header a{
+    color: aquamarine;
+}
+.ct-series-a .ct-bar,
+.ct-series-a .ct-point {
+  stroke: green !important;
+  stroke-width: 40;
+}
+
+.chart-hidden{
+	display: none;	
+}
+
+/* Grow */
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  }
+  
+  .boxes{
+  font-family: 'VT323', monospace;
+}
+	.review{
+  font-family: 'Marck Script', cursive;
+}
+
+
+
+/*.ct-series-a .ct-bar{
+	stroke-dasharray: 5 !important;
+	animation: dash 5s linear infinite !important;
+	
+}
+
+
+@keyframes dash {
+	to {
+	  stroke-dashoffset: -100;
+	}
+  } */
+
+.header {
+    background-color: #4062bb;
+    background-image: linear-gradient(316deg, #4062bb, #5200ae, #a23b72,  #c73e1d, #a23b72, #5200ae, #4062bb);
+    padding: 100px;
+    border-radius: 0;
+    margin-bottom:0;
+
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 20s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+	-moz-animation: Gradient 20s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+	animation: Gradient 20s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+@media only screen and (max-width: 600px) {
+    .header {
+    background-color: #4062bb;
+    background-image: linear-gradient(100deg, #4062bb, #5200ae, #a23b72,  #c73e1d, #a23b72, #5200ae, #4062bb);
+    border-radius: 0;
+    margin-bottom:0;
+    padding: 25px;
+
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+	-moz-animation: Gradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+	animation: Gradient 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    }
+}
+
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
