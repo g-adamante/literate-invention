@@ -6,6 +6,8 @@ draft: false
 
 Era véspera de Ano novo, 1879, quando Thomas Edison fez a primeira demonstração pública da lâmpada incandescente, na região rural e esparsamente populada de Menlo Park. Edison iluminou uma rua inteira com sua invenção. Cerca de três mil pessoas foram para aquela cidadezinha, anteriormente sem atrativos, para observar o “[Mago de Menlo Park](http://www.menloparkmuseum.org/history/thomas-edison-and-menlo-park/ "Mago de Menlo Park")” e sua luz, fazendo com que a Companhia Ferroviária da Pennsylvania tivesse de aumentar o número de [trens naquela linha](http://www.history.com/this-day-in-history/edison-demonstrates-incandescent-light "trens naquela linha"). Pouco tempo depois, Edison transformou um galpão abandonado em uma fábrica de lâmpadas e começou a produção em escala industrial.
 
+{{< subscribe >}}
+
 Imagine, então, o que teria acontecido se houvesse existido uma “Associação dos Produtores de Lâmpadas de Querosene” ou “Associação dos Extratores de Óleo de Baleia” influente no governo americano, que tivesse poder para argumentar que “a lâmpada elétrica irá destruir milhões de empregos”, ou algo como “essa invenção pode ser perigosa, exigimos sua proibição em nome da segurança das pessoas”. Teríamos sido privados de uma inovação tão benéfica (e que hoje parece indispensável à vida cotidiana) em função de interesses de indústrias ultrapassadas?
 
 De fato, não é possível saber. Mas isso pode gerar reflexões interessantes sobre as travas que impomos sobre a inovação, como ela acontece e como e muda nossas vidas.

@@ -17,6 +17,7 @@ toc: false
 
 O ideal é incorporar o CSS com o já existente na sua página, mas não é essencial.
 
+{{< subscribe >}}
 
 ## Como funciona?
 

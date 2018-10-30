@@ -50,7 +50,9 @@ Não é muito coerente (não consegui fazer rimar!), mas foi ótimo para rir e a
 
 Como eu fiz: criei um scraper que baixou as letras do Vagalume, depois usei uma cadeia simples para gerar as letras. 
 
-Aí descobri que tinha uma biblioteca que faz 10x melhor. (*óbvio!*)
+Aí descobri que tinha uma biblioteca que faz 10x melhor. (*óbvio!*)/
+
+{{< subscribe >}}
 
 ## O que é uma Cadeia de Markov?
 

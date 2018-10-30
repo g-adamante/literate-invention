@@ -51,6 +51,8 @@ Um dos primeiros conceitos abstratos que você aprendeu foi a linguagem.
 
 E logo você foi pra escola, que é um "*app store*" da infância - onde você aprendeu a ler, operações matemáticas básicas, etc. etc, e muito provavelmente depois se encontrou na faculdade instalando "*apps*" muito mais complexos.
 
+{{< subscribe >}}
+
 Agora: 
 
 diferente de um celular com sistema Android ou iOS em que você sabe exatamente quais são os aplicativos instalados, pode acessar eles facilmente, e se movimentar com fluidez entre diversas funções - 

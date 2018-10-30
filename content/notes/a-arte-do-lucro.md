@@ -31,6 +31,8 @@ Eu gostei dos modelos que vou fazer notas detalhadas sobre cada um deles, junto 
  
 >**PS:** Esse artigo vai ser atualizado conforme eu tomo as notas para cada modelo
 
+{{< subscribe >}}
+
 ## Lucro de Solução do Cliente: *Costumer Solution Profit*
 
 {{<chart data="[0, -30, -60, -70, -60, -30, 20, 80, 120, 145, 155, 155]" title="Costumer Solution Profit" height="400px" id="costumer-solution-profit-0">}}
@@ -134,3 +136,5 @@ A diferença entre o lucro de multi-componente e de pirâmide é que **o consumi
 {{<switchboard-profit id="1">}}
 
 Um dos modelos mais elegantes do livro, e pessoalmente, um dos meus favoritos.
+
+{{< subscribe >}}
