@@ -386,6 +386,15 @@ onclick="generateCode();">Generate code!</button>
     
     textArea.value = newWhatsappButton.outerHTML + " " + document.getElementById('whatsapp-button-style').outerHTML
     
+
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Engagement',
+      eventAction: 'generate',
+      eventLabel: 'WhatsApp Button'
+    });
+    
+
   };
 
 

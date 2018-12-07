@@ -1,10 +1,10 @@
 ---
-title: "Como colocar um botão de WhatsApp no seu site em 2 min"
+title: "Como colocar um botão com link de WhatsApp no seu site em 2 min"
 date: 2018-10-11T14:10:11+02:00
 draft: false
-description: "Coloque um botão de WhatsApp no seu site em 2 min: gere o botão agora e cole o código"
+description: "Coloque um botão com link de WhatsApp no seu site em 2 min: gere o botão agora e cole o código"
 H1: "Gerador de botão para WhatsApp: coloque em seu site em 2 min"
-SEOTitle: "Gerador gratis de link de Whatsapp para seu site"
+SEOTitle: "Gerador gratis de botão com link de Whatsapp para seu site"
 metaDescription: "Gerador de botão de WhatsApp. Como colocar um botăo de WhatsApp no seu site em 2 minutos. É só copiar e colar. (Funciona com Wordpress, plugin em breve)."
 toc: false
 ---

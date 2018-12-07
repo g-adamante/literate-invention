@@ -341,7 +341,6 @@ onclick="generateCode();">Gerar código!</button>
 
   function generateCode() {
 
-
     var message = "text=" + escape(document.getElementById('mensagem-botao').value);
     var phone = document.getElementById('phone')
 
@@ -384,6 +383,15 @@ onclick="generateCode();">Gerar código!</button>
     var newWhatsappButton = document.getElementById('whatsapp-button-div');
     
     textArea.value = newWhatsappButton.outerHTML + " " + document.getElementById('whatsapp-button-style').outerHTML
+    
+
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Engagement',
+      eventAction: 'generate',
+      eventLabel: 'WhatsApp Button'
+    });
+    
     
   };
 
