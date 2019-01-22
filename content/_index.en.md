@@ -8,6 +8,6 @@ Hello! Welcome to my website. Se você falar português, [seja bem vindo.](/ "se
 
 I’m Gabriel Adamante. I write about a [lot of things](#) (fiction, too). I wrote a short story book called [Tales the World Ending](#). 
 
-[Now](#), I’m living in Spain, working on a translation of Marcus Aurelius Meditations to Portuguese, doing some consulting work ([you should hire me!](#)), and getting ready to open a café called *Tropicália*. 
+[Now](#), I’m living between Curitiba and Palmas, and helping startups achieve traction with technical solutions with [Traktor](https://gotraktor.com). 
 
 Here, you'll find some [book notes](#), my [short stories](#) (mostly in Portuguese, I’m afraid), and some [snippets of code or marketing techniques](#) I may have put to use.

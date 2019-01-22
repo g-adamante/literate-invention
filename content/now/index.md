@@ -1,15 +1,13 @@
 ---
 title: "Agora"
-date: 2018-04-07T23:28:26+02:00
+date: 2019-01-22T23:28:26+02:00
 draft: false
 ---
 
-Agora eu estou vivendo na [Espanha](https://en.wikipedia.org/wiki/Valencia), e trabalhando em uma tradução do livro Meditações, de Marco Aurélio para português. Junto da tradução, eu também estou trabalhando no portal de conteúdo [Estóicos](www.estoicos.com.br). 
+Depois de passar uma temporada da Europa, voltei para o Brasil e estou morando entre Curitiba e Palmas. Devo ter diversas coisas para compartilhar sobre minhas experiências por lá muito em breve.
 
-Além disso, estou trabalhando junto do [Eduardo Fuzeto](https://fuzeto.com) na [Delta Containers](https://deltacontainers.com.br/). Objetivo: geração de leads e visitantes. Foco: SEO e SEM e [Gambiarras](https://pt.wikipedia.org/wiki/Gambiarra) em Python que resolvem o que precisa ser resolvido.
+Acabei abrindo uma empresa junto do Eduardo Fuzeto e o Guilherme Zanotto, a (Traktor)[https://gotraktor.com]. Nós somos uma agência bastante focada em marketing técnico. Estamos trabalhando com startups que querem atingir tração digital.
 
-Estou escutando [violão bem brasileirinho](https://open.spotify.com/user/22juqw35jemx5ymfnpb63ekba/playlist/5tVGPqD0VArJl577af0bIY?si=mjGPefZiT7awUUym5ag7_A) e vendo [Choque de Cultura](https://www.youtube.com/watch?v=4u1w1UnqI0Y&list=PL4_UyUPkbEyM52ONAIdYBGFlR4VxWn6nB) repetidamente. A última arte que me deixou encantado foi [Over the Garden Wall](https://www.imdb.com/title/tt3718778/).
+Não parei de escutar um [violão bem brasileirinho](https://open.spotify.com/user/22juqw35jemx5ymfnpb63ekba/playlist/5tVGPqD0VArJl577af0bIY?si=mjGPefZiT7awUUym5ag7_A) para trabalhar.
 
-Tentando melhorar minhas habilidades em Python, de vez em quando fazendo umas bobagens com Markov Chains, e também em pensamento abstrato, por meio de [Mental Models](https://www.fs.blog/mental-models/)
-
-Estou lendo o livro [MONEY: Master the game](https://www.goodreads.com/book/show/23014006-money-master-the-game)
+As coisas mais interessantes que eu estou aprendendo nos últimos dias são PKM (Personal Knowledge Management), utilizando as técnicas que o (Tiago Forte)[https://www.fortelabs.co/] expõe no curso [Building a Second Brain](https://www.buildingasecondbrain.com/). Espero que o resultado disso seja sentido, principalmente no volume de escrita neste blog. 

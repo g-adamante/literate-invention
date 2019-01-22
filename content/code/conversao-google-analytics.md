@@ -330,7 +330,8 @@ A melhor solução acaba sendo o Tag Manager, que facilita a centralização de 
 
 ### Enviando Eventos com JavaScript
 
-Você deve ter instalado em sua página o analytics.js
+Se você prefere fazer as coisas através de código e evitar disparar scripts quando possível (como o GTM), essa é uma ótima opção.
+
 
 Utilizando o seguinte código, você pode enviar o evento para o analytics:
 
@@ -347,35 +348,73 @@ Por exemplo, no botão de "Se inscreva" deste site, eu coloquei o código em uma
 
 	<button type="submit" value="Se inscreva" onclick="ga('send', {hitType: 'event',eventCategory: 'Conversion',eventAction: 'signup',eventLabel: 'newsletter'});" ....>
 
+Se você inspecionar esse botão aqui perceberá isso:
+
 {{< subscribe >}}
 
-### Importando dados de Vendas
+### Importando dados de Vendas no Google Analytics
 
 Esse é um tipo de conversão mais avançado, que deve ser usado por quem está escalando o negócio e busca performance máxima.
 
-Para fazer isso, você deve guardar o id de usuário do Google Analtyics (g_id) em seu CRM ou em algum banco de dados próprio.
+É um dos investimentos de Web Analytics que podem pagar em ouro, principalmente se você utilizar isso em conjunto com Marketing de Performance, compartilhando conversões e delimitando audiências no Google Ads.
 
-Depois, você alimenta o Analytics com os dados de venda, e se possível, seu valor monetário.
+Para fazer isso, você deve guardar o ID do Google Analtyics (cid ou uid) em seu CRM ou em algum banco de dados próprio.
 
-O método mais simples é através de [importação de um arquivo CSV](#).
+Depois, **você alimenta o Analytics com os dados de venda, e se possível, seu valor monetário**.
 
-Você também pode utilizar [dimensões customizadas](#), ou Measurement Protocol (que eu não tenho experiência então não vou falar sobre ele aqui).
+Você pode fazer isso no **Google Ads** através da importação de um arquivo CSV, porém *no Analytics a implementação é um pouco mais complexa.*  
+
+Devemos usar o **Protocolo de avaliação (Measurement Protocol)** para isso. 
+
+O processo básico é o seguinte:
+
+- [Você registra o ID de um usuário do Analytics em algum sistema (CRM, ou um Ecommerce)](#)
+- Você registra as informações de venda através do seu sistema próprio
+- [Você envia os dados para o Google Analytics através do Protocolo de Avaliação](#)
+
+OBS: Lembre que você **nunca deve enviar para o Analytics informação identificável de seus usuários**. 
+
+Ou seja: você pode enviar dados de transação, que produtos tal pessoa comprou, quanto gastou, etc. 
+
+Mas **não pode enviar e-mails, telefones, nomes, etc..**; Qualquer informação pessoal não deve ser enviada.
+
 
 -----
-OBS: A partir de agora, o conteúdo ainda não está terminado. 
+### Registrando o ID de um usuário no Analytics:
 
-Vou atualizar esse artigo muito em breve com esses detalhes. Qualquer coisa, me contate e conversamos.
+O Analytics gera um ID único para cada usuário que acessa seu site. 
 
------
+Esse ID fica registrado em um cookie, e você pode utilizar um pouco de Javascript para registrar essa informação em formulários, que registram dados dos seus Leads e enviam para um CRM (ou sistema de Ecommerce).
 
-### Importando dados para o Analytics através de arquivos CSV
+Assim, você iria assignar em seu CRM um ID do Google Analytics à cada cliente.
 
-*Em breve*
+Se você está usando a última versão do Analytics, você pode usar esse código para descobrir o Client ID:
 
+	ga.getAll()[0].get('clientId');
 
-### Importando dados para o Analytics através de Dimensões Customizadas
+Como integrar isso com um formulário depende, mas em geral, você irá criar um Input Invisível (Hidden Input), e preencher ele utilizando javascript. Seria algo assim:
 
-*Em breve*
+HTML:
+
+	<form>
+	<input type="text" style="display:none;" id="formClientID" value="">
+	</form>
+
+Javascript Vanilla:
+
+	var formClientID = ga.getAll()[0].get('clientId');
+
+	document.getElementById("formClientID").value = formClientID;
+
+O ideal é salvar esse script em um arquivo externo e deferir sua execução.
+
+Agora, você deve estar registrando dados do Analytics em seu CRM.
+
+O próximo passo é...
+
+### Enviar os dados de conversão para o Analytics através do Protocolo de Avaliação
+
+Em breve.
 
 ## Como usar Relatórios de Conversões como um profissonal:
 	- Metas
@@ -399,21 +438,6 @@ Vou atualizar esse artigo muito em breve com esses detalhes. Qualquer coisa, me 
 
 
 
-### Conversões por evento:
-
-
-- Como instalar rastreamento de conversões (Analytics):
-	- Google Analytics:
-		- Como criar uma conversão
-		- WordPress
-		- Google Tag Manager
-			- Eventos
-			- PageView
-		- Na mão
-			- Eventos
-			- PageView
-		- Conversões Complexas:
-			- DataLayer
 
 - Como usar Relatórios de Conversões como um profissonal:
 	- Metas
