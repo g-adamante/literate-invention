@@ -1,0 +1,26 @@
+<div>
+<h2>Artinery Description Generator</h2>
+
+<label for="productname">Product Name:</label>
+<input id="productname" type="text">
+<hr>
+<p id="description"></p>
+<hr>
+<button onclick="generate()">Generate</button>
+<script>
+var adjectives = "adorable beautiful charming delightful pleasant pretty cute appealing charming cute dazzling delicate delightful elegant exquisite fascinating fine good-looking gorgeous graceful handsome lovely magnificent marvelous pleasing pretty splendid stunning superb wonderful".split(/\s+/)
+
+var firstword = adjectives[Math.floor(Math.random()*adjectives.length)];
+var secondword = adjectives[Math.floor(Math.random()*adjectives.length)];
+
+function generate(){
+    var nome = document.getElementById('productname').value
+    var sentence = "This " + firstword + " " + nome + " features a (INSERT DESCRIPTION). It will look " + secondword + " in a (INSERT DESCRIPTION)."
+    console.log(sentence)
+    var paragraph = document.getElementById('description')
+    paragraph.innerHTML = sentence
+
+}
+
+</script>
+</div>
