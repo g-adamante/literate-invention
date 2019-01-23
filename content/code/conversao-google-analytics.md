@@ -368,9 +368,9 @@ Devemos usar o **Protocolo de avaliação (Measurement Protocol)** para isso.
 
 O processo básico é o seguinte:
 
-- [Você registra o ID de um usuário do Analytics em algum sistema (CRM, ou um Ecommerce)](#)
+- [Você registra o ID de um usuário do Analytics em algum sistema](#registrando-o-id-de-um-usu%c3%a1rio-no-analytics)
 - Você registra as informações de venda através do seu sistema próprio
-- [Você envia os dados para o Google Analytics através do Protocolo de Avaliação](#)
+- [Você envia os dados para o Google Analytics através do Protocolo de Avaliação](#enviar-os-dados-de-convers%c3%a3o-para-o-analytics-atrav%c3%a9s-do-protocolo-de-avalia%c3%a7%c3%a3o)
 
 OBS: Lembre que você **nunca deve enviar para o Analytics informação identificável de seus usuários**. 
 
@@ -414,7 +414,39 @@ O próximo passo é...
 
 ### Enviar os dados de conversão para o Analytics através do Protocolo de Avaliação
 
-Em breve.
+O protocolo de avaliação do Google Analytics funciona como uma API que te permite postar dados.
+
+Vamos supor que você esteja usando um CRM como o [Pipedrive](https://www.pipedrive.com/pt) para gerenciar suas vendas, e você queira enviar esses dados para o Google Analytics.
+
+Você poderia fazer uma [automação](https://zapier.com/apps/pipedrive/integrations) usando o [Zapier](https://zapier.com/), de forma que sempre que um negócio for **Ganho**, você envia as informações dele para o Analytics.
+
+Para enviar as informações, você precisa enviar uma requisição HTTP do tipo POST para http://www.google-analytics.com/collect, com alguns parâmetros no payload:
+
+	v=1              // versão do measurement protocol.
+	&tid=UA-XXXXX-Y  // ID de rastreamento / ID da propriedade.
+	&cid=555         // O ID do cliente que você registrou 
+	&t=              // Tipo de interação. Pode ser pageview, evento, etc.
+
+No caso, vamos registrar um evento de venda. Para isso, você precisa dos seguintes parâmetros:
+
+	&t=event         // Tipo de Hit, evento. Não mude.
+	&ec=conversion   // Categoria do evento. É obrigatório.
+	&ea=purchase     // Ação do evento. Também é obrigatório.
+	&el=		     // Nome do evento. Opcional.
+	&ev=300          // Valor do evento. Você usa isso para registrar dados monetários.
+
+
+O Zapier te permite rodar um script de Python assim que o gatilho do Pipedrive for acionado:
+
+	if input_data:
+		cid = input_data['cid']				// Você guarda os dados que puxou do Zapier em variaveis.
+		value = input_data['value'] 		// Lembre de NUNCA guardar dados pessoais no Analytics.
+
+	payload = {'v': '1', 'tid': 'UA-XXXXX-Y', 'cid': cid, 't': 'event', 'ec': 'conversion', 'ea': 'purchase','ev': value}
+	r = requests.post('http://www.google-analytics.com/collect', params=payload)
+
+Pronto! Você registrou um evento de venda no Analytics usando dados do seu CRM de forma completamente automatizada ;) 
+
 
 ## Como usar Relatórios de Conversões como um profissonal:
 	- Metas
