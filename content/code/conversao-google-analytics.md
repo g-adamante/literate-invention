@@ -448,11 +448,94 @@ O Zapier te permite rodar um script de Python assim que o gatilho do Pipedrive f
 Pronto! Você registrou um evento de venda no Analytics usando dados do seu CRM de forma completamente automatizada ;) 
 
 
-## Como usar Relatórios de Conversões como um profissonal:
+## Como usar Relatórios de Metas como um profissonal:
+
+Depois de algum tempo que instalamos as conversões, começaremos a ter dados para analisar. Aqui que as coisas ficam divertidas :)
+
+Os relatórios de Metas nos proporcionam insights sobre como nossos usuários mais valiosos interagem com o nosso site.
+
+Não vou tocar os relatórios de E-commerce aqui pois isso exige um artigo em separado. 
+
+O primeiro grupo de relatórios, Metas, te dá uma visão mais geral das metas no seu site - em geral são relatórios básicos que não exigem muita explicação.
+
+O relatório que eu considero mais interessante do grupo é **Caminho Reverso da Meta**.
+(Vou deixar de lado o Relatório de Funil pois para esse tipo de análise é melhor usar uma ferramenta própria para isso, como o Heap Analytics ou o MixPanel).
+
+
+### Caminho Reverso da Meta
+
+Aqui, você pode visualizar **a movimentação das pessoas pelas páginas do seu site** antes de completar uma meta. 
+
+Assim, você pode ter uma ideia de quais são os caminhos mais efetivos para converter um Lead, e descobrir qual o processo de consumo de conteúdo no site para que alguém se interesse por seu produto.
+
+Ao combinar isso com a ferramenta de Segmentos, nós conseguimos **delimitar esse mesmo caminho por diversas dimensões**, como Tipo de Dispositivo (Mobile vs Desktop), Canal de Aquisição e etc.
+
+![Caminho Reverso da Meta](/../img/reverse-goal-path.jpg)  
+
+Onde está o número 1, você deve escolher qual meta analisar. Onde está o número dois, escolhemos segmento. 
+
+A primeira coluna é onde a meta foi completada - se você está usando uma página de conversão, será sempre ela. As próximas colunas são as páginas anteriores por onde a pessoa passou. Onde está escrito (entrada) foi onde a pessoa entrou no site.
+
+Supondo que você trabalhe com muito marketing de conteúdo e SEO, se você Segmentar (Onde está o 2 na imagem) o relatório por Tráfego Orgânico 
+
+![Caminho Reverso da Meta](/../img/segmentar.png)  
+
+E apartir daí, entender qual o caminho de descoberta de conteúdo em seu site que leva a mais conversões. Com isso, uma análise de CRO nas páginas chave poderia aumentar sua geração de leads significativamente.
+
+### Canais Multifunil
+
+Esse acredito que esse, junto dos modelos de atribuição, são os meus relatórios favoritos do GA. 
+
+É natural que empresas que vendem e geram leads pela internet tenham funis marketing complexos com muitos canais e pontos de contato envolvidos. 
+
+Um dos grandes poderes do Analytics é conseguir agregar toda essa informação complexa, apontando por onde focar seus esforços de otimização e investimento.
+
+Vamos começar?
+
+Todos os relatórios deste grupo têm as mesmas opções na parte superior:
+
+![Primeira Visão](/../img/conversoes-assistidas-primeiro.png) 
+
+### O Tipo de Conversão
+
+![Tipo de Conversão](/../img/conversoes-assistidas-tipo.png) 
+
+Por padrão, **todas as conversões vêm selecionadas**. Portanto preste atenção, se você deseja ver apenas uma conversão de Lead, ou de venda, tenha certeza que só ela está selecionada.
+
+### O Tempo de Lookback
+
+![Tempo de Lookback](/../img/conversoes-assistidas-lookback-window.png) 
+
+Isso é o **período de tempo passado que você deseja incluir no relatório**.
+Você deve ajustar isso de acordo com a jornada de compra do seu cliente.
+Normalmente, para produtos B2B, 90 dias é a melhor opção.
+
+### Visão Geral dos Canais Multifunil
+
+Não há muita coisa acontecendo aqui... A não ser este **incrível** diagrama de Venn sobre seus canais de Aquisição de Conversões.  
+
+![Tempo de Lookback](/../img/venn-conversoes.png) 
+
+Minha sugestão aqui é colocar um maior período de tempo para ter mais volume de dados.
+
+Você pode ver por esse diagrama acima, que mesmo que o canal Orgânico seja mais importante no volume de conversões, **a Pesquisa Paga e Pesquisa Orgânica têm uma pequena área em comum**.
+
+Isso quer dizer que **meu investimento de Pesquisa Paga está sendo direcionado para um público diferente do Orgânico, e que nós estamos gerando Leads que não teriam sido gerados sem esse investimento.** 
+
+### Conversões Assistidas
+
+Eu fiz um post específico para esse relatório, que você pode encontrar [aqui](/code/conversoes-assistidas).
+
+### Caminhos de Conversão mais Comuns
+
+Outro relatório muuuuuito divertido. 
+
+
+
 	- Metas
 		- Overview
 		- Goal Completion Location
-		- Reverse Goal Path 
+		- Reverse Goal Path  
 		- Funnel Visualization
 		- Goal Flow
 	- Ecommerce
