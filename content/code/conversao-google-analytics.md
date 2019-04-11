@@ -553,33 +553,3 @@ Outro relatório muuuuuito divertido.
 
 
 
-
-- Como usar Relatórios de Conversões como um profissonal:
-	- Metas
-		- Overview
-		- Goal Completion Location
-		- Reverse Goal Path 
-		- Funnel Visualization
-		- Goal Flow
-	- Ecommerce
-		- Artigo Próprio
-	- Canais Multifunil *O relatório mais poderoso do Google Analytics*
-		- Conversões Assistidas (link)
-		- Top Conversion Paths
-		- Time Lag
-		- Path Length
-	- Modelos de Atribuição
-- BONUS: O segredo de como usar conversões com 101% de eficiência
-	- Audiências x Outros Relatórios
-	- Outras Dimensões 
-
-
-- O Guia das Conversões no Google Ads
-	- Google Ads:
-		- Como criar uma conversão
-		- Wordpress
-		- Google Tag Manager
-		- Na mão
-		- Conversões de Ligação **
-	- Integrar Google Analytics e Google Ads
-	- Integrando seu CRM com Google Ads
