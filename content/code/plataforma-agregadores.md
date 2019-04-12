@@ -20,7 +20,9 @@ A Netflix tem o mesmo modelo de negócio: agregar filmes e séries de diversas e
 
 O pulo do gato é que assim que um agregador tem um base de usuários interessante, seus fornecedores ficam cada vez mais interessados em participar do agregador.
 
-E quanto mais fornecedores um agregador tem, mais interessante ele é para os usuários finais. Isso gera um ciclo virtuoso que:
+E quanto mais fornecedores um agregador tem, mais interessante ele é para os usuários finais. 
+
+Isso gera um ciclo virtuoso que:
 
 - diminui o CAC (custo de aquisição de cliente) para cada cliente novo
 - diminui o custo operacional do negócio a cada cliente novo
