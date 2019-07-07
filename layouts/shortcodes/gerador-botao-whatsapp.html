@@ -1,539 +1,350 @@
-<div class="form" id="gerador-botao-whatsapp">
+<div class="col text-center">
+                    <div class="form" id="gerador-botao-whatsapp" style="width:95%;">
+                            <legend>
+                              <span class="number">1</span> 
+                              Número de Whatsapp
+                              <div class="tooltip question" onclick="">?
+                                <span class="tooltiptext">Coloque o número com o código de país (55 para o Brasil) e código de área. <br>Exemplo: +55(41)99526-6655
+                                </span>
+                              </div>
+                            </legend>
+                          
+                            <input type="tel" name="phone" id="phone" placeholder="+XX(XX)XXXXX-XXXX" required="required" title="Número de Whatsapp">
+                          
+                            <legend>
+                                <span class="number">2</span> 
+                                Cabeçalho do Widget
+                                <div class="tooltip question" onclick="">?
+                                  <span class="tooltiptext">Coloque o número com o código de país (55 para o Brasil) e código de área. <br>Exemplo: +55(41)99526-6655
+                                  </span>
+                                </div>
+                              </legend>
+                            
+                              <input type="text" name="header" id="input-header" placeholder="Seu nome ou nome da sua equipe" required="required" title="Cabeçalho do Widget">
+  
+                              <script>
+                                function updateWidget(inputElement, outputElementId, outputElementId2){
+                                  outputElement = document.getElementById(outputElementId)
+                                  outputElement2 = document.getElementById(outputElementId2)
+                                  outputElement.innerHTML = inputElement.value
+                                  outputElement2.innerHTML = inputElement.value
+                                  
+                                }
 
-  <legend>
-    <span class="number">1</span> 
-    Número de Whatsapp
-    <div class="tooltip question" onclick="">?
-      <span class="tooltiptext">Coloque o número com o código de país (55 para o Brasil) e código de área. <br>Exemplo: +55(41)99526-6655
-      </span>
-    </div>
-  </legend>
+                              var inputHeader = document.getElementById('input-header')
+                              inputHeader.addEventListener('keyup', function(){
+                                updateWidget(inputHeader,"whatswidget-text-header-outer","whatswidget-conversation-title");
+                              }, false);
+                              
+                              </script>
+                            
+                            <legend>
+                              <span class="number">3</span>
+                              Mensagem
+                              <div class="tooltip question" onclick="">?<span class="tooltiptext">A mensagem que
+                                  você quer que seja escrita (deixe em branco para nada)</span>  
+                              </div>
+                            </legend>
+                          
+                          <textarea name="mensagem-botao" style="resize:none;" id="mensagem-botao"></textarea>
+                          
+                            <script>
+                               var mensagem = document.getElementById('mensagem-botao')
+                               mensagem.addEventListener('keyup', function(){
+                                updateWidget(mensagem,"whatswidget-conversation-message","whatswidget-text-message-outer");
+                              }, false);
+                           
 
-  <input type="tel" name="phone" id="phone" placeholder="+XX(XX)XXXXX-XXXX" required="required" title="Número de Whatsapp">
+
+                            </script>
+  
+                          
+                          <button class="hvr-bounce-whatsapp-button-in" style="margin-top:10px;" 
+                          onclick="generateCode();">Gerar código!</button>
+                          
+                          <legend><span class="number">4</span>Código:</legend>
+                          <textarea name="codigo-botao" readonly style="resize:none;" id="codigo-botao"></textarea>
+                          
+                          <button class="hvr-bounce-whatsapp-button-in" onclick="copy()">Copiar código gerado</button>
+                          </div>
+                          
+                          
+                          <style>
+                            input[type="text"],
+                            input[type="password"],
+                            input[type="date"],
+                            input[type="datetime"],
+                            input[type="email"],
+                            input[type="number"],
+                            input[type="search"],
+                            input[type="tel"],
+                            input[type="time"],
+                            input[type="url"],
+                            textarea,
+                            select {
+                              background: rgba(255, 255, 255, 0.1);
+                              border: none;
+                              font-size: 16px;
+                              height: auto;
+                              margin: 0;
+                              outline: 0;
+                              padding: 15px;
+                              width: 100%;
+                              background-color: #e8eeef;
+                              color: #8a97a0;
+                              box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+                              margin-bottom: 30px;
+                            }
+                            input[type="radio"],
+                            input[type="checkbox"] {
+                              margin: 0 4px 8px 0;
+                            }
+                            select {
+                              padding: 6px;
+                              height: 32px;
+                              border-radius: 2px;
+                            }
+                            button {
+                              padding: 19px 39px 18px 39px;
+                              color: #FFF;
+                              background-color: #002061;
+                              font-size: 18px;
+                              text-align: center;
+                              font-style: normal;
+                              border-radius: 5px;
+                              width: 100%;
+                              border: 1px solid #07193d;
+                              border-width: 1px 1px 3px;
+                              box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+                              margin-bottom: 10px;
+                            }
+                            fieldset {
+                              margin-bottom: 30px;
+                              border: none;
+                            }
+                            legend {
+                              font-size: 1.4em;
+                              margin-bottom: 10px;
+                            }
+                            label {
+                              display: block;
+                              margin-bottom: 8px;
+                            }
+                            label.light {
+                              font-weight: 300;
+                              display: inline;
+                            }
+                            .number {
+                              background-color: #002061;
+                              color: #fff;
+                              height: 30px;
+                              width: 30px;
+                              display: inline-block;
+                              font-size: 0.8em;
+                              margin-right: 4px;
+                              line-height: 30px;
+                              text-align: center;
+                              text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+                              border-radius: 100%;
+                            }
+                            .question {
+                              background-color: #3272c5;
+                              color: #fff;
+                              height: 15px;
+                              width: 15px;
+                              display: inline-block;
+                              font-size: 50%;
+                              margin-top: 15px;
+                              line-height: 15px;
+                              text-align: center;
+                              text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+                              border-radius: 100%;
+                              position: relative;
+                            }
+                          -A 
+                            /* bounce-whatsapp-button In */
+                            .hvr-bounce-whatsapp-button-in {
+                              display: inline-block;
+                              vertical-align: middle;
+                              -webkit-transform: perspective(1px) translateZ(0);
+                              transform: perspective(1px) translateZ(0);
+                              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                              -webkit-transition-duration: 0.5s;
+                              transition-duration: 0.5s;
+                            }
+                            .hvr-bounce-whatsapp-button-in:hover,
+                            .hvr-bounce-whatsapp-button-in:focus,
+                            .hvr-bounce-whatsapp-button-in:active {
+                              -webkit-transform: scale(1.2);
+                              transform: scale(1.2);
+                              -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                              transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                            }
+                            /* Tooltip text */
+                            .tooltip .tooltiptext {
+                              visibility: hidden;
+                              width: 160px;
+                              background-color: #555;
+                              color: #fff;
+                              text-align: center;
+                              padding: 15px;
+                              border-radius: 6px;
+                              /* Position the tooltip text */
+                              position: absolute;
+                              text-align: justify;
+                              z-index: 1;
+                              bottom: 125%;
+                              left: 50%;
+                              margin-left: -60px;
+                              /* Fade in tooltip */
+                              opacity: 0;
+                              transition: opacity 0.3s;
+                            }
+                            /* Tooltip arrow */
+                            .tooltip .tooltiptext::after {
+                              content: "";
+                              position: absolute;
+                              top: 100%;
+                              left: 50%;
+                              margin-left: -5px;
+                              border-width: 5px;
+                              border-style: solid;
+                              border-color: #555 transparent transparent transparent;
+                            }
+                            /* Show the tooltip text when you mouse over the tooltip container */
+                            .tooltip:hover .tooltiptext {
+                              visibility: visible;
+                              opacity: 1;
+                            }
+                            .toggle {
+                              position: relative;
+                              display: inline-block;
+                              width: 60px;
+                              height: 10px;
+                              cursor: pointer;
+                              -webkit-tap-highlight-color: transparent;
+                              transform: translate3d(0, 0, 0);
+                              margin-left: 30px;
+                            }
+                            .toggle:before {
+                              content: "";
+                              position: relative;
+                              top: 3px;
+                              left: 3px;
+                              width: 34px;
+                              height: 14px;
+                              display: block;
+                              background: #9A9999;
+                              border-radius: 8px;
+                              transition: background 0.2s ease;
+                            }
+                            .toggle span {
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 20px;
+                              height: 20px;
+                              display: block;
+                              background: white;
+                              border-radius: 10px;
+                              box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+                              transition: all 0.2s ease;
+                            }
+                            .toggle span:before {
+                              content: "";
+                              position: absolute;
+                              display: block;
+                              margin: -18px;
+                              width: 56px;
+                              height: 56px;
+                              background: #002061;
+                              border-radius: 50%;
+                              transform: scale(0);
+                              opacity: 1;
+                              pointer-events: none;
+                            }
+                            #cbx:checked+.toggle:before {
+                              background: #5ce986;
+                            }
+                            #cbx:checked+.toggle span {
+                              background: #16c249;
+                              transform: translateX(20px);
+                              transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+                              box-shadow: 0 3px 8px #1e94413a;
+                            }
+                            #cbx:checked+.toggle span:before {
+                              transform: scale(1);
+                              opacity: 0;
+                              transition: all 0.4s ease;
+                            }
+                          </style>
+                          
+                          <script>
+
+                            /**
+                             * charCode [48,57] 	Numbers 0 to 9
+                             * keyCode 46  			"delete"
+                             * keyCode 9  			"tab"
+                             * keyCode 13  			"enter"
+                             * keyCode 116 			"F5"
+                             * keyCode 8  			"backscape"
+                             * keyCode 37,38,39,40	Arrows
+                             * keyCode 10			(LF)
+                             */
+                            function validate_int(myEvento) {
+                              if ((myEvento.charCode >= 48 && myEvento.charCode <= 57) || myEvento.keyCode == 9 || myEvento.keyCode == 10 || myEvento.keyCode == 13 || myEvento.keyCode == 8 || myEvento.keyCode == 116 || myEvento.keyCode == 46 || (myEvento.keyCode <= 40 && myEvento.keyCode >= 37)) {
+                                dato = true;
+                              } else {
+                                dato = false;
+                              }
+                              return dato;
+                            }
+                            
+                            document.getElementById("phone").onkeypress = validate_int;
+                            
+                            document.getElementById("phone").addEventListener('keyup', updateLink)
+
+                            function updateLink(){
+                              phone = document.getElementById('phone').value;
+                              linkDesktop = document.getElementById('whatswidget-phone-desktop');
+                              linkMobile = document.getElementById('whatswidget-phone-mobile');
+                              desktopString = "https://web.whatsapp.com/send?phone="
+                              mobileString = "https://wa.me/"
+                              linkDesktop.href = desktopString + phone
+                              linkMobile.href = desktopString + phone
+
+                            }
+
+                            function generateCode(){
+                              updateLink();
+                              widget = document.getElementById('whatswidget-pre-wrapper');
+                              codearea = document.getElementById('codigo-botao')
+                              codearea.value = widget.outerHTML
+                            }
+
+                            function copy(){
+                              codearea = document.getElementById('codigo-botao')
+                              codearea.select()
+                              document.execCommand('copy')
+                            }
+
+                            ga('send', {
+                              hitType: 'event',
+                              eventCategory: 'Engagement',
+                              eventAction: 'generate',
+                              eventLabel: 'WhatsApp Button'
+                            });                             
 
 
-  <legend>
-    <span class="number">2</span>
-    Mensagem
-    <div class="tooltip question" onclick="">?<span class="tooltiptext">A mensagem que
-        você quer que seja escrita automaticamente (deixe em branco para nada)</span>  
-    </div>
-  </legend>
 
-<textarea name="mensagem-botao" style="resize:none;" id="mensagem-botao"></textarea>
-
-<legend>
-  <span class="number">3</span>Animação
-  <div class="tooltip question" onclick="">?
-    <span class="tooltiptext">
-    Você quer que o botão seja animado?</span>
+                          </script>
+<div id="whatswidget-pre-wrapper" class="">
+                            <div id="whatswidget-widget-wrapper" class="whatswidget-widget-wrapper" style="all:revert;">
+<div id="whatswidget-conversation" class="whatswidget-conversation" style="all:revert;"><div class="whatswidget-conversation-header" style="all:revert;">
+<div id="whatswidget-conversation-title" class="whatswidget-conversation-title" style="all:revert;"> <span style="all:revert;">Cabeçalho da Conversa</span></div></div><div id="whatswidget-conversation-message" class="whatswidget-conversation-message " style="all:revert;"> <span style="all:revert;">Mensagem da conversa!</span></div><div class="whatswidget-conversation-cta" style="all:revert;"> <a style="all:revert;" id="whatswidget-phone-desktop" target="_blank" href="https://web.whatsapp.com/send?phone=" class="whatswidget-cta whatswidget-cta-desktop">Enviar Mensagem</a> <a id="whatswidget-phone-mobile" target="_blank" href="https://wa.me/" class="whatswidget-cta whatswidget-cta-mobile" style="all:revert;">Enviar Mensagem</a></div><a target="_blank" class="whatswidget-link" href="https://www.adamante.com.br/code/whatsapp-site/" title="Feito no WhatsWidget" style="all:revert;"><img src="https://i.ibb.co/sQs06Nw/diamond-icon.png" style="all:revert;"></a></div><div id="whatswidget-conversation-message-outer" class="whatswidget-conversation-message-outer" style="all:revert;"> <span id="whatswidget-text-header-outer" class="whatswidget-text-header-outer" style="all:revert;">Cabeçalho da mensagem </span><br> <div id="whatswidget-text-message-outer" class="whatswidget-text-message-outer" style="all:revert;" >Texto da mensagem!</div></div><div class="whatswidget-button-wrapper" style="all:revert;"><div class="whatswidget-button" id="whatswidget-button" style="all:revert;"><div style="margin:0 auto;width:38.5px;all:revert;"> <img class="whatswidget-icon" style="all:revert;" src="https://i.ibb.co/H4sfCRF/md-5af2d4c95ac7b.png"></div></div></div>
+<script id="whatswidget-script">document.getElementById("whatswidget-conversation").style.display="none";document.getElementById("whatswidget-conversation").style.opacity="0"; var button=document.getElementById("whatswidget-button");button.addEventListener("click",openChat);var conversationMessageOuter=document.getElementById("whatswidget-conversation-message-outer");conversationMessageOuter.addEventListener("click",openChat);var chatOpen=!1;function openChat(){0==chatOpen?(document.getElementById("whatswidget-conversation").style.display="block",document.getElementById("whatswidget-conversation").style.opacity=100,chatOpen=!0,document.getElementById("whatswidget-conversation-message-outer").style.display="none"):(document.getElementById("whatswidget-conversation").style.opacity=0,document.getElementById("whatswidget-conversation").style.display="none",chatOpen=!1)}</script></div>
+<style id="whatswidget-style" >.whatswidget-widget-wrapper{font-family:"Helvetica Neue","Apple Color Emoji",Helvetica,Arial,sans-serif !important;font-size:16px !important;position:fixed !important;bottom:20px !important;right:30px !important;z-index:1001 !important}.whatswidget-conversation{background-color:#e4dcd4 !important;background-image:url('data:image/png !important;base64,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') !important;background-repeat:repeat !important;box-shadow:rgba(0, 0, 0, 0.16) 0px 5px 40px !important;width:250px !important;height:300px !important;border-radius:10px !important;transition-duration:0.5s !important;margin-bottom:80px !important}.whatswidget-conversation-header{background-color:white !important;padding:10px !important;padding-left:25px !important;box-shadow:0px 1px #00000029 !important;font-weight:600 !important;border-top-left-radius:10px !important;border-top-right-radius:10px !important}.whatswidget-conversation-message{line-height: 1.2em !important;background-color:white !important;padding:10px !important;margin:10px !important;margin-left:15px !important;border-radius:5px !important}.whatswidget-conversation-message-outer{background-color:#FFF !important;padding:10px !important;margin:10px !important;margin-left:0px !important;border-radius:5px !important;box-shadow:rgba(0, 0, 0, 0.342) 0px 2.5px 10px !important;cursor:pointer !important;animation:nudge 2s linear infinite !important;margin-bottom:70px !important}.whatswidget-text-header-outer{font-weight:bold !important;font-size:90% !important}.whatswidget-text-message-outer{font-size:90% !important}.whatswidget-conversation-cta{border-radius:25px !important;width:175px !important;font-size:110% !important;padding:10px !important;margin:0 auto !important;text-align:center !important;background-color:#23b123 !important;color:white !important;font-weight:bold !important;box-shadow:rgba(0, 0, 0, 0.16) 0px 2.5px 10px !important;transition:1s !important;position:absolute !important;top:62% !important;left:10% !important}.whatswidget-conversation-cta:hover{transform:scale(1.1) !important;filter:brightness(1.3) !important}.whatswidget-cta{text-decoration:none !important;color:white !important}.whatswidget-cta-desktop{display:none !important}.whatswidget-cta-mobile{display:inherit !important}@media (min-width: 48em){.whatswidget-cta-desktop{display:inherit !important}
+.whatswidget-cta-mobile{display:none !important}}.whatswidget-button-wrapper{position:fixed !important;bottom:15px !important;right:15px !important}.whatswidget-button{position:relative !important;right:0px !important;background-color:#31d831 !important;border-radius:100% !important;width:60px !important;height:60px !important;box-shadow:2px 1px #0d630d63 !important;transition:1s !important}.whatswidget-icon{width:42px !important;height:42px !important;position:absolute !important; bottom:10px !important; left:10px !important;}.whatswidget-button:hover{filter:brightness(115%) !important;transform:rotate(15deg) scale(1.15) !important;cursor:pointer !important}@keyframes nudge{20%,100%{transform:translate(0,0)}0%{transform:translate(0,5px);transform:rotate(2deg)}10%{transform:translate(0,-5px);transform:rotate(-2deg)}}.whatswidget-link{position:absolute !important;bottom:90px !important;right:5px !important;opacity:0.5 !important}</style>
+</div>  
 </div>
-
-
-<input type="checkbox" id="cbx" style="display:none">
-<label for="cbx" class="toggle" onclick="this.data='true'" data="false"><span></span></label>
-
-
-</legend>
-
-
-
-<button class="hvr-bounce-whatsapp-button-in" style="margin-top:10px;" 
-onclick="generateCode();">Gerar código!</button>
-
-<legend><span class="number">4</span>Código:</legend>
-<textarea name="codigo-botao" readonly style="resize:none;" id="codigo-botao"></textarea>
-
-<button class="hvr-bounce-whatsapp-button-in" onclick="copy()">Copiar código gerado</button>
-</div>
-
-
-<style>
-  input[type="text"],
-  input[type="password"],
-  input[type="date"],
-  input[type="datetime"],
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="time"],
-  input[type="url"],
-  textarea,
-  select {
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-    margin-bottom: 30px;
-  }
-
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin: 0 4px 8px 0;
-  }
-
-  select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-  }
-
-  button {
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    background-color: #4bc970;
-    font-size: 18px;
-    text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 100%;
-    border: 1px solid #3ac162;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-    margin-bottom: 10px;
-  }
-
-  fieldset {
-    margin-bottom: 30px;
-    border: none;
-  }
-
-  legend {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 8px;
-  }
-
-  label.light {
-    font-weight: 300;
-    display: inline;
-  }
-
-  .number {
-    background-color: #5fcf80;
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 100%;
-  }
-
-  .question {
-    background-color: #3272c5;
-    color: #fff;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    font-size: 50%;
-    margin-top: 15px;
-    line-height: 15px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 100%;
-    position: relative;
-  }
-
--A 
-
-  /* bounce-whatsapp-button In */
-  .hvr-bounce-whatsapp-button-in {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-  }
-
-  .hvr-bounce-whatsapp-button-in:hover,
-  .hvr-bounce-whatsapp-button-in:focus,
-  .hvr-bounce-whatsapp-button-in:active {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  }
-
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    border-radius: 6px;
-
-    /* Position the tooltip text */
-    position: absolute;
-    text-align: justify;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  /* Tooltip arrow */
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-
-
-  .toggle {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 10px;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transform: translate3d(0, 0, 0);
-    margin-left: 30px;
-  }
-
-  .toggle:before {
-    content: "";
-    position: relative;
-    top: 3px;
-    left: 3px;
-    width: 34px;
-    height: 14px;
-    display: block;
-    background: #9A9999;
-    border-radius: 8px;
-    transition: background 0.2s ease;
-  }
-
-  .toggle span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
-    transition: all 0.2s ease;
-  }
-
-  .toggle span:before {
-    content: "";
-    position: absolute;
-    display: block;
-    margin: -18px;
-    width: 56px;
-    height: 56px;
-    background: #4bc970;
-    border-radius: 50%;
-    transform: scale(0);
-    opacity: 1;
-    pointer-events: none;
-  }
-
-  #cbx:checked+.toggle:before {
-    background: #5ce986;
-  }
-
-  #cbx:checked+.toggle span {
-    background: #16c249;
-    transform: translateX(20px);
-    transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
-    box-shadow: 0 3px 8px #1e94413a;
-  }
-
-  #cbx:checked+.toggle span:before {
-    transform: scale(1);
-    opacity: 0;
-    transition: all 0.4s ease;
-  }
-
-</style>
-
-<script>
-  /**
-   * charCode [48,57] 	Numbers 0 to 9
-   * keyCode 46  			"delete"
-   * keyCode 9  			"tab"
-   * keyCode 13  			"enter"
-   * keyCode 116 			"F5"
-   * keyCode 8  			"backscape"
-   * keyCode 37,38,39,40	Arrows
-   * keyCode 10			(LF)
-   */
-  function validate_int(myEvento) {
-    if ((myEvento.charCode >= 48 && myEvento.charCode <= 57) || myEvento.keyCode == 9 || myEvento.keyCode == 10 || myEvento.keyCode == 13 || myEvento.keyCode == 8 || myEvento.keyCode == 116 || myEvento.keyCode == 46 || (myEvento.keyCode <= 40 && myEvento.keyCode >= 37)) {
-      dato = true;
-    } else {
-      dato = false;
-    }
-    return dato;
-  }
-
-  function phone_number_mask() {
-    var myMask = "+__(__)_____-____";
-    var myCaja = document.getElementById("phone");
-    var myText = "";
-    var myNumbers = [];
-    var myOutPut = ""
-    var theLastPos = 1;
-    myText = myCaja.value;
-    //get numbers
-    for (var i = 0; i < myText.length; i++) {
-      if (!isNaN(myText.charAt(i)) && myText.charAt(i) != " ") {
-        myNumbers.push(myText.charAt(i));
-      }
-    }
-    //write over mask
-    for (var j = 0; j < myMask.length; j++) {
-      if (myMask.charAt(j) == "_") { //replace "_" by a number 
-        if (myNumbers.length == 0)
-          myOutPut = myOutPut + myMask.charAt(j);
-        else {
-          myOutPut = myOutPut + myNumbers.shift();
-          theLastPos = j + 1; //set caret position
-        }
-      } else {
-        myOutPut = myOutPut + myMask.charAt(j);
-      }
-    }
-    document.getElementById("phone").value = myOutPut;
-    document.getElementById("phone").setSelectionRange(theLastPos, theLastPos);
-  }
-
-  document.getElementById("phone").onkeypress = validate_int;
-  document.getElementById("phone").onkeyup = phone_number_mask;
-
-
-  function generateCode() {
-
-    var message = "text=" + escape(document.getElementById('mensagem-botao').value);
-    var phone = document.getElementById('phone')
-
-    var whatsappNum = phone.value.replace('(', '')
-    whatsappNum = whatsappNum.replace(')', '')
-    whatsappNum = whatsappNum.replace('-', '')
-    whatsappNum = whatsappNum.replace('+', '')
-    whatsappNum = whatsappNum.replace(/_/g, '')
-
-    var whatsappbutton = document.getElementById('whatsapp-button-div');
-
-    whatsappbutton.children[0].href = whatsappbutton.children[0].href.slice(0,whatsappbutton.children[0].href.search('text=')) + message
-    whatsappbutton.children[1].href = whatsappbutton.children[1].href.slice(0,whatsappbutton.children[1].href.search('text=')) + message
-
-    var numbernow = whatsappbutton.children[0].href.slice(whatsappbutton.children[0].href.search('phone')+6,whatsappbutton.children[0].href.search('text=')-1)
-
-    whatsappbutton.children[0].href = whatsappbutton.children[0].href.slice(0,whatsappbutton.children[0].href.search('text=')) + message
-    whatsappbutton.children[1].href = whatsappbutton.children[1].href.slice(0,whatsappbutton.children[1].href.search('text=')) + message
-
-
-    whatsappbutton.children[0].href = whatsappbutton.children[0].href.replace(numbernow, whatsappNum) 
-    whatsappbutton.children[1].href = whatsappbutton.children[1].href.replace(numbernow, whatsappNum) 
-    
-    if(!document.getElementById('cbx').checked){
-
-      if(whatsappbutton.classList.contains('dont-bounce-whatsapp-button')){
-        //do nothing 
-
-      }
-      else{
-      whatsappbutton.outerHTML = whatsappbutton.outerHTML.replace('bounce-whatsapp-button','dont-bounce-whatsapp-button');
-      }
-
-    }else{
-      whatsappbutton.outerHTML = whatsappbutton.outerHTML.replace('dont-bounce-whatsapp-button','bounce-whatsapp-button')  
-    }
-
-    var textArea = document.getElementById('codigo-botao');
-
-    var newWhatsappButton = document.getElementById('whatsapp-button-div');
-    
-    textArea.value = newWhatsappButton.outerHTML + " " + document.getElementById('whatsapp-button-style').outerHTML
-    
-
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Engagement',
-      eventAction: 'generate',
-      eventLabel: 'WhatsApp Button'
-    });
-    
-    
-  };
-
-  function copy() {
-    let textarea = document.getElementById("codigo-botao");
-    textarea.select();
-    document.execCommand("copy");
-  }
-</script>
-
-<style id="whatsapp-button-style">
-  .whatsapp-button-generator {
-    position: fixed;
-    border-radius: 8%;
-    background-color: #31d831;
-    bottom: 20px;
-    right: 20px;
-    width: 90px;
-    height: 75px;
-    z-index: 110
-  }
-
-  .whatsapp-button-content {
-    padding-top: 7px;
-    padding-left: 5px;
-    height:70px;
-  }
-
-  .whatsapp-button-web {
-    display: none
-  }
-
-  .whatsapp-button-mobile {
-    display: inherit
-  }
-
-  @media (min-width: 48em) {
-    .whatsapp-button-web {
-      display: inherit
-    }
-
-    .whatsapp-button-mobile {
-      display: none
-    }
-  }
-
-  .bounce-whatsapp-button {
-    animation: bounce-whatsapp-button 2s infinite;
-    -webkit-animation: bounce-whatsapp-button 2s infinite;
-    -moz-animation: bounce-whatsapp-button 2s infinite;
-    -o-animation: bounce-whatsapp-button 2s infinite
-  }
-
-  @-webkit-keyframes bounce-whatsapp-button {
-
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-      -webkit-transform: translateY(0)
-    }
-
-    40% {
-      -webkit-transform: translateY(-30px)
-    }
-
-    60% {
-      -webkit-transform: translateY(-15px)
-    }
-  }
-
-  @-moz-keyframes bounce-whatsapp-button {
-
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-      -moz-transform: translateY(0)
-    }
-
-    40% {
-      -moz-transform: translateY(-30px)
-    }
-
-    60% {
-      -moz-transform: translateY(-15px)
-    }
-  }
-
-  @-o-keyframes bounce-whatsapp-button {
-
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-      -o-transform: translateY(0)
-    }
-
-    40% {
-      -o-transform: translateY(-30px)
-    }
-
-    60% {
-      -o-transform: translateY(-15px)
-    }
-  }
-
-  @keyframes bounce-whatsapp-button {
-
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-      transform: translateY(0)
-    }
-
-    40% {
-      transform: translateY(-30px)
-    }
-
-    60% {
-      transform: translateY(-15px)
-    }
-  }
-</style>
-
-<div style="position:fixed;bottom:110px;right:20px;text-align:center;background-color:white;border-radius:8%;width:90px;">
-  <p>Preview<br> ⬇️</p>
-</div>
-
-<div class="whatsapp-button-generator bounce-whatsapp-button" id="whatsapp-button-div">
-  <a id="whatsapp-button-web" target="_blank" href="https://web.whatsapp.com/send?phone=14155238886?text=wiki+whatsapp">
-    <img class="whatsapp-button-content whatsapp-button-web" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAABzCAMAAABEvaubAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAViAAAFYgGsYVycAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAvpQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Oov7nAAAAP10Uk5TAAECAwQFBgcICQoL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">
-  </a>
-  <a id="whatsapp-button-mobile" target="_blank" href="https://wa.me/14155238886?text=wiki+whatsapp">
-    <img class="whatsapp-button-content whatsapp-button-mobile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAABzCAMAAABEvaubAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAViAAAFYgGsYVycAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAvpQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Oov7nAAAAP10Uk5TAAECAwQFBgcICQoL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">
-  </a>
-</div>
-
-</div>
-</div>
+        </div>
